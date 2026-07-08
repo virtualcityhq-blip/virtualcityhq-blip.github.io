@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://virtualcityhq-blip.github.io/sitemap.xml
+Sitemap: https://sendlines.com/sitemap.xml
+Sitemap: https://sendlines.com/climbing/sitemap.xml
