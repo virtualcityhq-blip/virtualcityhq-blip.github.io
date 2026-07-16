@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "source": "design-data/build_climbing_hub.py route registry",
+  "route_count": 21,
+  "areas": [
+    "clear-creek-canyon",
+    "boulder-canyon",
+    "staunton-state-park"
+  ],
+  "routes": [
+    {
+      "slug": "playinhooky",
+      "name": "PLAYIN' HOOKY",
+      "area": "clear-creek-canyon",
+      "etsy": "https://www.etsy.com/listing/4528597443/playin-hooky-climbing-print-clear-creek",
+      "plate": "C-01",
+      "source_master": "design-data/AFCC_playinhooky_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/playinhooky/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/playinhooky/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/playinhooky/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/playinhooky/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/playinhooky/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/playinhooky/@2x.jpg"
+      }
+    },
+    {
+      "slug": "blackgold",
+      "name": "BLACK GOLD",
+      "area": "clear-creek-canyon",
+      "etsy": "https://www.etsy.com/listing/4528600487/black-gold-climbing-print-clear-creek",
+      "plate": "C-02",
+      "source_master": "design-data/AFCC_blackgold_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/blackgold/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/blackgold/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/blackgold/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/blackgold/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/blackgold/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/blackgold/@2x.jpg"
+      }
+    },
+    {
+      "slug": "madeintheshade",
+      "name": "MADE IN THE SHADE",
+      "area": "clear-creek-canyon",
+      "etsy": "https://www.etsy.com/listing/4528611088/made-in-the-shade-climbing-print-clear",
+      "plate": "C-03",
+      "source_master": "design-data/AFCC_madeintheshade_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/madeintheshade/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/madeintheshade/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/madeintheshade/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/madeintheshade/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/madeintheshade/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/madeintheshade/@2x.jpg"
+      }
+    },
+    {
+      "slug": "peopleschoice",
+      "name": "PEOPLE'S CHOICE",
+      "area": "clear-creek-canyon",
+      "etsy": "https://www.etsy.com/listing/4528601871/peoples-choice-climbing-print-clear",
+      "plate": "C-04",
+      "source_master": "design-data/AFCC_peopleschoice_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/peopleschoice/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/peopleschoice/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/peopleschoice/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/peopleschoice/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/peopleschoice/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/peopleschoice/@2x.jpg"
+      }
+    },
+    {
+      "slug": "gneissroof",
+      "name": "GNEISS ROOF",
+      "area": "clear-creek-canyon",
+      "etsy": "https://www.etsy.com/listing/4528602073/gneiss-roof-climbing-print-clear-creek",
+      "plate": "C-05",
+      "source_master": "design-data/AFCC_gneissroof_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/gneissroof/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/gneissroof/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/gneissroof/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/gneissroof/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/gneissroof/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/gneissroof/@2x.jpg"
+      }
+    },
+    {
+      "slug": "reefermadness",
+      "name": "REEFER MADNESS",
+      "area": "clear-creek-canyon",
+      "etsy": "https://www.etsy.com/listing/4528611776/reefer-madness-climbing-print-clear",
+      "plate": "C-06",
+      "source_master": "design-data/AFCC_reefermadness_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/reefermadness/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/reefermadness/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/reefermadness/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/reefermadness/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/reefermadness/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/reefermadness/@2x.jpg"
+      }
+    },
+    {
+      "slug": "eastslab",
+      "name": "EAST SLAB",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528612270/east-slab-climbing-print-boulder-canyon",
+      "plate": "C-07",
+      "source_master": "design-data/BLD_eastslab_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/eastslab/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/eastslab/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/eastslab/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/eastslab/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/eastslab/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/eastslab/@2x.jpg"
+      }
+    },
+    {
+      "slug": "animation",
+      "name": "ANIMATION",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528612328/animation-climbing-print-boulder-canyon",
+      "plate": "C-08",
+      "source_master": "design-data/BLD_animation_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/animation/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/animation/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/animation/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/animation/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/animation/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/animation/@2x.jpg"
+      }
+    },
+    {
+      "slug": "northfacecenter",
+      "name": "NORTH FACE CENTER",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528612392/north-face-center-climbing-print-boulder",
+      "plate": "C-09",
+      "source_master": "design-data/BLD_northfacecenter_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/northfacecenter/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/northfacecenter/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/northfacecenter/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/northfacecenter/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/northfacecenter/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/northfacecenter/@2x.jpg"
+      }
+    },
+    {
+      "slug": "youngrackless",
+      "name": "THE YOUNG AND THE RACKLESS",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528612472/the-young-and-the-rackless-climbing",
+      "plate": "C-10",
+      "source_master": "design-data/BLD_youngrackless_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/youngrackless/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/youngrackless/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/youngrackless/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/youngrackless/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/youngrackless/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/youngrackless/@2x.jpg"
+      }
+    },
+    {
+      "slug": "lust",
+      "name": "LUST",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528603093/lust-climbing-print-boulder-canyon-route",
+      "plate": "C-11",
+      "source_master": "design-data/BLD_lust_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/lust/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/lust/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/lust/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/lust/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/lust/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/lust/@2x.jpg"
+      }
+    },
+    {
+      "slug": "freewillie",
+      "name": "FREE WILLIE",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528603171/free-willie-climbing-print-boulder",
+      "plate": "C-12",
+      "source_master": "design-data/BLD_freewillie_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/freewillie/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/freewillie/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/freewillie/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/freewillie/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/freewillie/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/freewillie/@2x.jpg"
+      }
+    },
+    {
+      "slug": "countryclubcrack",
+      "name": "COUNTRY CLUB CRACK",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528612718/country-club-crack-climbing-print",
+      "plate": "C-13",
+      "source_master": "design-data/BLD_countryclubcrack_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/countryclubcrack/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/countryclubcrack/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/countryclubcrack/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/countryclubcrack/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/countryclubcrack/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/countryclubcrack/@2x.jpg"
+      }
+    },
+    {
+      "slug": "animalmagnetism",
+      "name": "ANIMAL MAGNETISM",
+      "area": "boulder-canyon",
+      "etsy": "https://www.etsy.com/listing/4528612758/animal-magnetism-climbing-print-boulder",
+      "plate": "C-14",
+      "source_master": "design-data/BLD_animalmagnetism_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/animalmagnetism/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/animalmagnetism/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/animalmagnetism/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/animalmagnetism/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/animalmagnetism/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/animalmagnetism/@2x.jpg"
+      }
+    },
+    {
+      "slug": "reefonit",
+      "name": "REEF ON IT",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528602395/reef-on-it-climbing-print-staunton-state",
+      "plate": "C-15",
+      "source_master": "design-data/STN_reefonit_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/reefonit/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/reefonit/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/reefonit/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/reefonit/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/reefonit/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/reefonit/@2x.jpg"
+      }
+    },
+    {
+      "slug": "gingersnap",
+      "name": "GINGER SNAP",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528612012/ginger-snap-climbing-print-staunton",
+      "plate": "C-16",
+      "source_master": "design-data/STN_gingersnap_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/gingersnap/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/gingersnap/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/gingersnap/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/gingersnap/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/gingersnap/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/gingersnap/@2x.jpg"
+      }
+    },
+    {
+      "slug": "harvey",
+      "name": "HARVEY",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528612058/harvey-climbing-print-staunton-state",
+      "plate": "C-17",
+      "source_master": "design-data/STN_harvey_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/harvey/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/harvey/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/harvey/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/harvey/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/harvey/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/harvey/@2x.jpg"
+      }
+    },
+    {
+      "slug": "chasethesky",
+      "name": "CHASE THE SKY",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528612094/chase-the-sky-climbing-print-staunton",
+      "plate": "C-18",
+      "source_master": "design-data/STN_chasethesky_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/chasethesky/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/chasethesky/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/chasethesky/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/chasethesky/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/chasethesky/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/chasethesky/@2x.jpg"
+      }
+    },
+    {
+      "slug": "headshigh",
+      "name": "HEADS HIGH",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528612124/heads-high-climbing-print-staunton-state",
+      "plate": "C-19",
+      "source_master": "design-data/STN_headshigh_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/headshigh/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/headshigh/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/headshigh/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/headshigh/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/headshigh/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/headshigh/@2x.jpg"
+      }
+    },
+    {
+      "slug": "nightking",
+      "name": "NIGHT KING",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528612180/night-king-climbing-print-staunton-state",
+      "plate": "C-20",
+      "source_master": "design-data/STN_nightking_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/nightking/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/nightking/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/nightking/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/nightking/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/nightking/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/nightking/@2x.jpg"
+      }
+    },
+    {
+      "slug": "cookiethief",
+      "name": "THE COOKIE THIEF",
+      "area": "staunton-state-park",
+      "etsy": "https://www.etsy.com/listing/4528602753/the-cookie-thief-climbing-print-staunton",
+      "plate": "C-21",
+      "source_master": "design-data/STN_cookiethief_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/cookiethief/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/cookiethief/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/cookiethief/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/cookiethief/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/cookiethief/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/cookiethief/@2x.jpg"
+      }
+    }
+  ]
+}
