@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "source": "live, legally cleared Sendlines photo products from HQ as of 2026-07-17",
+  "count": 6,
+  "photographs": [
+    {
+      "slug": "hallett-sprague",
+      "catalog": "P-01",
+      "title": "Hallett Peak from Sprague Lake",
+      "place": "Rocky Mountain National Park",
+      "aspect": "4 / 3",
+      "source": "approval-images/print-ready-300dpi/sku_9_300dpi.png",
+      "etsy": "https://www.etsy.com/listing/4519697831/hallett-peak-photo-sprague-lake",
+      "alt": "Hallett Peak in winter above frozen Sprague Lake in Rocky Mountain National Park",
+      "files": {
+        "1x_avif": "/assets/photography/hallett-sprague/@1x.avif",
+        "1x_webp": "/assets/photography/hallett-sprague/@1x.webp",
+        "1x_jpg": "/assets/photography/hallett-sprague/@1x.jpg",
+        "2x_avif": "/assets/photography/hallett-sprague/@2x.avif",
+        "2x_webp": "/assets/photography/hallett-sprague/@2x.webp",
+        "2x_jpg": "/assets/photography/hallett-sprague/@2x.jpg"
+      }
+    },
+    {
+      "slug": "alpine-basin",
+      "catalog": "P-02",
+      "title": "Colorado Alpine Basin",
+      "place": "Colorado high country",
+      "aspect": "4 / 3",
+      "source": "approval-images/print-ready-300dpi/sku_10_300dpi.png",
+      "etsy": "https://www.etsy.com/listing/4530001035/colorado-alpine-basin-photo-print-high",
+      "alt": "Colorado alpine basin with lingering snow, green slopes, and small mountain lakes",
+      "files": {
+        "1x_avif": "/assets/photography/alpine-basin/@1x.avif",
+        "1x_webp": "/assets/photography/alpine-basin/@1x.webp",
+        "1x_jpg": "/assets/photography/alpine-basin/@1x.jpg",
+        "2x_avif": "/assets/photography/alpine-basin/@2x.avif",
+        "2x_webp": "/assets/photography/alpine-basin/@2x.webp",
+        "2x_jpg": "/assets/photography/alpine-basin/@2x.jpg"
+      }
+    },
+    {
+      "slug": "hallett-square",
+      "catalog": "P-03",
+      "title": "Hallett Peak, Square Study",
+      "place": "Rocky Mountain National Park",
+      "aspect": "1 / 1",
+      "source": "approval-images/print-ready-300dpi/sku_13_300dpi.png",
+      "etsy": "https://www.etsy.com/listing/4530011160/hallett-peak-square-photo-print-rmnp",
+      "alt": "Square winter photograph of Hallett Peak from Sprague Lake",
+      "files": {
+        "1x_avif": "/assets/photography/hallett-square/@1x.avif",
+        "1x_webp": "/assets/photography/hallett-square/@1x.webp",
+        "1x_jpg": "/assets/photography/hallett-square/@1x.jpg",
+        "2x_avif": "/assets/photography/hallett-square/@2x.avif",
+        "2x_webp": "/assets/photography/hallett-square/@2x.webp",
+        "2x_jpg": "/assets/photography/hallett-square/@2x.jpg"
+      }
+    },
+    {
+      "slug": "twin-lakes",
+      "catalog": "P-04",
+      "title": "Twin Lakes Reflection",
+      "place": "Twin Lakes, Colorado",
+      "aspect": "2 / 3",
+      "source": "approval-images/print-ready-300dpi/sku_25_300dpi.png",
+      "etsy": "https://www.etsy.com/listing/4530001509/twin-lakes-reflection-photo-print",
+      "alt": "Clouds and mountains reflected in the clear water at Twin Lakes, Colorado",
+      "files": {
+        "1x_avif": "/assets/photography/twin-lakes/@1x.avif",
+        "1x_webp": "/assets/photography/twin-lakes/@1x.webp",
+        "1x_jpg": "/assets/photography/twin-lakes/@1x.jpg",
+        "2x_avif": "/assets/photography/twin-lakes/@2x.avif",
+        "2x_webp": "/assets/photography/twin-lakes/@2x.webp",
+        "2x_jpg": "/assets/photography/twin-lakes/@2x.jpg"
+      }
+    },
+    {
+      "slug": "rmnp-sunset",
+      "catalog": "P-05",
+      "title": "Estes Valley Dusk",
+      "place": "Rocky Mountain National Park",
+      "aspect": "4 / 3",
+      "source": "approval-images/print-ready-300dpi/sku_29_300dpi.png",
+      "etsy": "https://www.etsy.com/listing/4530001853/rocky-mountain-sunset-silhouette-photo",
+      "alt": "Orange dusk behind the mountain silhouette of Rocky Mountain National Park from Estes Park",
+      "files": {
+        "1x_avif": "/assets/photography/rmnp-sunset/@1x.avif",
+        "1x_webp": "/assets/photography/rmnp-sunset/@1x.webp",
+        "1x_jpg": "/assets/photography/rmnp-sunset/@1x.jpg",
+        "2x_avif": "/assets/photography/rmnp-sunset/@2x.avif",
+        "2x_webp": "/assets/photography/rmnp-sunset/@2x.webp",
+        "2x_jpg": "/assets/photography/rmnp-sunset/@2x.jpg"
+      }
+    },
+    {
+      "slug": "rifle-falls",
+      "catalog": "P-06",
+      "title": "Rifle Falls, Triple Cascade",
+      "place": "Rifle Falls State Park",
+      "aspect": "4 / 3",
+      "source": "approval-images/print-ready-300dpi/sku_30_300dpi.png",
+      "etsy": "https://www.etsy.com/listing/4530002095/rifle-falls-triple-cascade-photo-print",
+      "alt": "Three waterfalls descending over green rock at Rifle Falls State Park",
+      "files": {
+        "1x_avif": "/assets/photography/rifle-falls/@1x.avif",
+        "1x_webp": "/assets/photography/rifle-falls/@1x.webp",
+        "1x_jpg": "/assets/photography/rifle-falls/@1x.jpg",
+        "2x_avif": "/assets/photography/rifle-falls/@2x.avif",
+        "2x_webp": "/assets/photography/rifle-falls/@2x.webp",
+        "2x_jpg": "/assets/photography/rifle-falls/@2x.jpg"
+      }
+    }
+  ]
+}

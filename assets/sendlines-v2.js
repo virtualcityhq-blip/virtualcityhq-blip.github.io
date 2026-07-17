@@ -71,7 +71,7 @@
       if (!avif || !webp || !image) return;
       avif.srcset = button.dataset.avif;
       webp.srcset = button.dataset.webp;
-      image.src = button.dataset.jpg;
+      image.src = button.dataset.jpg.split(/\s+/)[0];
       image.srcset = button.dataset.jpg;
       image.alt = image.alt.replace(/, [^,.]+ edition\./, `, ${button.dataset.label} edition.`);
       picker.querySelectorAll('[data-edition-choice]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
@@ -82,12 +82,20 @@
 
   const buyBlock = document.querySelector('.purchase-block');
   const stickyBuy = document.querySelector('.sticky-buy');
-  if (buyBlock && stickyBuy && matchMedia('(max-width: 768px)').matches) {
+  const primaryBuy = document.querySelector('[data-primary-buy]');
+  if (buyBlock && stickyBuy && primaryBuy) {
+    const mobileBuy = matchMedia('(max-width: 768px)');
     let scheduled = false;
     const updateStickyBuy = () => {
+      if (!mobileBuy.matches) {
+        stickyBuy.classList.remove('is-visible');
+        scheduled = false;
+        return;
+      }
       const purchase = buyBlock.getBoundingClientRect();
+      const primary = primaryBuy.getBoundingClientRect();
       const purchaseIsVisible = purchase.top < innerHeight && purchase.bottom > 0;
-      stickyBuy.classList.toggle('is-visible', scrollY > 720 && !purchaseIsVisible);
+      stickyBuy.classList.toggle('is-visible', primary.bottom < 0 && !purchaseIsVisible);
       scheduled = false;
     };
     const scheduleStickyBuy = () => {
@@ -97,6 +105,7 @@
     };
     addEventListener('scroll', scheduleStickyBuy, {passive: true});
     addEventListener('resize', scheduleStickyBuy);
+    mobileBuy.addEventListener('change', scheduleStickyBuy);
     updateStickyBuy();
   }
 })();

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <path class="trace-line" d="M 1031.84 783.92 L 966.28 735.37 L 828.96 640.36 L 804.82 595.21 L 742.74 528.39 L 599.35 295.68 L 591.01 274.56 L 572.01 165.05 L 572.23 133.54 L 568.16 116.63" pathLength="1" fill="none" vector-effect="non-scaling-stroke"/>
+  <circle class="trace-start" cx="1031.84" cy="783.92" r="4.62"/>
+  <circle class="trace-summit-halo" cx="569.21" cy="116.08" r="11.79"/>
+  <circle class="trace-summit" cx="569.21" cy="116.08" r="6.67"/>
+</svg>

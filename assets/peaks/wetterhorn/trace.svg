@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-107.5114567 -38.0613021 0.0053590 0.0060758" preserveAspectRatio="xMidYMid meet">
-  <path d="M -107.5065443 -38.0557326 L -107.5071757 -38.0561010 L -107.5084983 -38.0568219 L -107.5087308 -38.0571645 L -107.5093287 -38.0576715 L -107.5107097 -38.0594372 L -107.5107901 -38.0595975 L -107.5109731 -38.0604284 L -107.5109709 -38.0606675 L -107.5110101 -38.0607958" pathLength="1" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-107.5114567 -38.0613067 0.0053590 0.0060809" preserveAspectRatio="xMidYMid meet">
+  <path class="trace-line" d="M -107.5065443 -38.0557326 L -107.5071757 -38.0561010 L -107.5084983 -38.0568219 L -107.5087308 -38.0571645 L -107.5093287 -38.0576715 L -107.5107097 -38.0594372 L -107.5107901 -38.0595975 L -107.5109731 -38.0604284 L -107.5109709 -38.0606675 L -107.5110101 -38.0607958" pathLength="1" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"/>
+  <circle class="trace-start" cx="-107.5065443" cy="-38.0557326" r="0.0000547"/>
+  <circle class="trace-summit-halo" cx="-107.5110000" cy="-38.0608000" r="0.0001396"/>
+  <circle class="trace-summit" cx="-107.5110000" cy="-38.0608000" r="0.0000794"/>
 </svg>

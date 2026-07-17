@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2500" preserveAspectRatio="none">
-  <path class="trace-underlay" d="M 916.56 1195.35 L 933.70 1209.87 L 943.99 1215.15 L 964.55 1229.67 L 979.98 1236.27 L 1000.55 1244.19 L 1021.12 1246.83 L 1031.40 1253.43 L 1036.54 1267.96 L 1045.11 1279.84 L 1060.54 1297.00 L 1062.58 1322.40" pathLength="1" fill="none" vector-effect="non-scaling-stroke"/>
-  <path class="trace-line" d="M 916.56 1195.35 L 933.70 1209.87 L 943.99 1215.15 L 964.55 1229.67 L 979.98 1236.27 L 1000.55 1244.19 L 1021.12 1246.83 L 1031.40 1253.43 L 1036.54 1267.96 L 1045.11 1279.84 L 1060.54 1297.00 L 1062.58 1322.40" pathLength="1" fill="none" vector-effect="non-scaling-stroke"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2500" preserveAspectRatio="xMidYMid slice">
+  <path class="trace-line" d="M 444.63 622.63 L 575.00 766.05 L 653.23 818.19 L 809.70 961.62 L 927.04 1026.80 L 1083.50 1105.04 L 1239.97 1131.11 L 1318.21 1196.30 L 1357.31 1339.73 L 1422.51 1457.05 L 1539.87 1626.58 L 1555.37 1877.37" pathLength="1" fill="none" vector-effect="non-scaling-stroke"/>
+  <circle class="trace-start" cx="444.63" cy="622.63" r="13.72"/>
+  <circle class="trace-summit-halo" cx="1548.90" cy="1875.26" r="35.06"/>
+  <circle class="trace-summit" cx="1548.90" cy="1875.26" r="19.82"/>
 </svg>
