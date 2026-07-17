@@ -72,7 +72,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_elbert.png",
-        "sha256": "361ca39de50341cf7967e57a74e8be599b958c7dd6282676146b90c4e966615a"
+        "sha256": "817c5460c3a63391580308c1eeb25852756684fb5114762c71644fa122f20564"
       },
       "crop": {
         "route_box": [
@@ -285,7 +285,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_massive.png",
-        "sha256": "cf3d7d58bdc753f2a06c3fd63df8eea6284984e41b74bb66ba9dc5b7a7bf4e5b"
+        "sha256": "1adf9bb74be976794eb00f08948f4b953bfb27567e856b49ab1ccbb509942ea0"
       },
       "crop": {
         "route_box": [
@@ -498,7 +498,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_harvard.png",
-        "sha256": "6d7579e211bfabfa14df1f095b67854d5cdbbf83001b726bc58418bd2becb8c4"
+        "sha256": "143e50bdfde4987e12a194710e5b5618a447cffb8af1349fb5ce720f1ad70360"
       },
       "crop": {
         "route_box": [
@@ -711,7 +711,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_blanca.png",
-        "sha256": "08149916b9c52a7b2bc42e47f470e5bdd446c75a76605591fffd89f716e90327"
+        "sha256": "6414b673ae88368f21a70072abbfff32a8ce610b9070b4a2f76a9b28245f5aeb"
       },
       "crop": {
         "route_box": [
@@ -924,7 +924,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_laplata.png",
-        "sha256": "6e4a10b428a4e7c9a67925a53f34b29f9c0f0eb9a5a631f28adfa8732ccb1954"
+        "sha256": "1718fb18a25a45eab9342feaf5c6365a0f19efba83f68b751b097aed574933d8"
       },
       "crop": {
         "route_box": [
@@ -1137,7 +1137,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_uncompahgre.png",
-        "sha256": "5d9b97fb7840de3eacae0a5e8de2c22ea69fc90e8a86ea550492074e2510cdf3"
+        "sha256": "008bd99f447fecc538fc1e1f5f58f435c728cb6f6bcb8295a38e96c68d693a47"
       },
       "crop": {
         "route_box": [
@@ -1350,7 +1350,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_crestone.png",
-        "sha256": "0a0abd52fa065b7b65edc037b00e305b48dea2204dce52d935d1e5b3bcc996f1"
+        "sha256": "2fa749027e3b83805435fdb5b76056ad7a54fda2b37499a158b988ef958dfd55"
       },
       "crop": {
         "route_box": [
@@ -1563,7 +1563,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_lincoln.png",
-        "sha256": "e274f8ca30e582aa2beba0df404434873c7400fc1959c4714cf097706a74918a"
+        "sha256": "5efce4de6535270ee7937a0e7933133742891f59fa3bc9272682aa40a8e5bee1"
       },
       "crop": {
         "route_box": [
@@ -1776,7 +1776,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_castle.png",
-        "sha256": "f5a6d3f320bf919d5f7abbf0b0ad9d959faf6dab3ad6d3b3f4eea4b1b45b9bf3"
+        "sha256": "d3304e2107fbd53b727f907d88576b16ebcdcc3e49003710c01759cfaa9df1e2"
       },
       "crop": {
         "route_box": [
@@ -1989,7 +1989,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_grays.png",
-        "sha256": "08d0d9c13b888451710e94113924a4f1d2b10115789255873e764a0f0818c382"
+        "sha256": "d2e17b56722024c70bc6da68ffc4a4624bb1e6801b05383bb3a4c13db06298c1"
       },
       "crop": {
         "route_box": [
@@ -2202,7 +2202,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_antero.png",
-        "sha256": "5f8786b3d7468ed07059b75a779ecc03df29c8ad7e7fc4d0fc3561724e68cb7b"
+        "sha256": "34d0792d37b3bff326ca16ecf866de7472115b552f93525bb591e444c534d034"
       },
       "crop": {
         "route_box": [
@@ -2415,7 +2415,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_torreys.png",
-        "sha256": "7e673eed8f19d73dd1a2ffcf3f19c60eae941cefbe7a86fa7a22e0dd9dc719c5"
+        "sha256": "f42e340532c25fd0c9d54eca90286be81266c6459b3929de2486d85d547311b4"
       },
       "crop": {
         "route_box": [
@@ -2628,7 +2628,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_bluesky.png",
-        "sha256": "0697369148e923e7487fdc4f2cad95d570e814e649cd31d9f2dc7c111e399df5"
+        "sha256": "892913aaee1201664918a7ada6585f91fe8afba4dca55ad70490ef362b1639cc"
       },
       "crop": {
         "route_box": [
@@ -2841,7 +2841,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_quandary.png",
-        "sha256": "408cd8dd4afc9d8da22b81c5f4f4eb473311e331f28e2597b55c6bb6a28ed352"
+        "sha256": "a8967976a9f97781c782951a43c4135f421652bc413104f279afba5fd8140838"
       },
       "crop": {
         "route_box": [
@@ -3054,7 +3054,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_longs.png",
-        "sha256": "96f7f54bf70f8a7447ccd3cf6450fe62c2b579e8a986dd38718d51f8c28a852d"
+        "sha256": "5893e181f952c231fc9a756d85dc6a840e75162246397fa96c25988bca28d705"
       },
       "crop": {
         "route_box": [
@@ -3275,7 +3275,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_wilson2.png",
-        "sha256": "7b2d6dbed8b6b8cbbf4fe1b143ed370b5a129d887986f5987ebe30dd234e5d06"
+        "sha256": "2b779ab5240c6b998e6cf91042830d2836ba83678f9ade5eebca0ea7321c4da7"
       },
       "crop": {
         "route_box": [
@@ -3488,7 +3488,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_shavano.png",
-        "sha256": "2d70eb8763649529c5429531e4af296bd20cd4b671637372d1607521eea3db6f"
+        "sha256": "9ae3b44df1ae06a2402b9c56df73e5601b0f5aeb0bfd3accdab7c028ba06ed11"
       },
       "crop": {
         "route_box": [
@@ -3701,7 +3701,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_princeton.png",
-        "sha256": "b94e7fd7061d3979f15889358ce8144b2e17d063c458937e358e88bc773bc3dd"
+        "sha256": "905d5e04ed0f3c6816b4d4204b6994109340f73e19d067c7615310401edbe399"
       },
       "crop": {
         "route_box": [
@@ -3914,7 +3914,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_crestoneneedle.png",
-        "sha256": "d91acb7fe18c3d63bfb2cf0f59bf65370a06a4c00336bd418693e86b47a9a755"
+        "sha256": "8f4086f77e66a4d4dc4f69e4add3a36c77fe3e328ee7e78e88429a6768c7fc66"
       },
       "crop": {
         "route_box": [
@@ -4127,7 +4127,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_belford.png",
-        "sha256": "65933656b447dd95771a3f0ce1cd6b04b9d345c64db8697304fea5686cba312e"
+        "sha256": "fd8db0cc2f90ca0305bd07376d37dcdc8f73777fb13d8ab01cea01ee26b9d4a4"
       },
       "crop": {
         "route_box": [
@@ -4340,7 +4340,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_yale.png",
-        "sha256": "1086deb0204099b746539bcbbc27d344c1aeb7de51c255b19b7a22eca95e4386"
+        "sha256": "f251be5c31ed04d239aaa17847432a6827aa335a946c3bc4af847ea40e4213f8"
       },
       "crop": {
         "route_box": [
@@ -4553,7 +4553,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_bross.png",
-        "sha256": "9a4d9ab22c8b1dffd5fc08b7520343f17bcede166d69b4a35725b5b512ea644f"
+        "sha256": "711fd0664c13a48fdd030000f5b31131086cdd52df575a58a1e9f4f21c46e318"
       },
       "crop": {
         "route_box": [
@@ -4766,7 +4766,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_kitcarsonain.png",
-        "sha256": "e0c8d1fa58477d489b305b4ec0e1c5ab674b18e55c235b562cd32960ec841bd0"
+        "sha256": "dc7251b1e97f6a4712a8a780977a55d748678716f8daf1ddbd0354b748e3dfc0"
       },
       "crop": {
         "route_box": [
@@ -4979,7 +4979,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_maroon.png",
-        "sha256": "02815e67f00680e683304ff2c29fa1092c336afe9ea3a4039ce103a3628091bc"
+        "sha256": "ca3e7e3ad1968a7711fc7ed9a392b37832dc32b0f9d9ffbdf56812f7d88110a3"
       },
       "crop": {
         "route_box": [
@@ -5192,7 +5192,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_tabeguache.png",
-        "sha256": "e22eba5dc42244586821aea3fac2dd3c8e987201a185a5d683cfb44931e6067d"
+        "sha256": "c23ea125a29231977d46177a5b79bcfe59ad63fb8706fefaab7582dfb65d75b1"
       },
       "crop": {
         "route_box": [
@@ -5405,7 +5405,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_oxford.png",
-        "sha256": "cb2b7285141f85bba44088beec8036cfe74f22d52a5584d1ae6603ed99b19d48"
+        "sha256": "e8a9a6127d0583d8252965e97d05025c7387933657fbfc3d5f82aadbfb543498"
       },
       "crop": {
         "route_box": [
@@ -5618,7 +5618,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_sneffels.png",
-        "sha256": "ccc98b98c900efc51665ef5aa5cbeabd20e1f214970d9ac299f081a56c370529"
+        "sha256": "57df729fdc4ed16e448c5a5c71d3629984f78c6384a3b26a55a2d3b6385beed4"
       },
       "crop": {
         "route_box": [
@@ -5831,7 +5831,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_democrat.png",
-        "sha256": "126194305bf0462d63247b078372cb26d4ccc85b9555074ea92f884a8edffe25"
+        "sha256": "4c7fa4ae26115164302556dda1f2bf2ad6564375ab3f3aed0c8219b56a6e76dd"
       },
       "crop": {
         "route_box": [
@@ -6044,7 +6044,7 @@
       "approach_only": true,
       "source": {
         "master": "design-data/PRINT_capitol.png",
-        "sha256": "757c99d937b864ce3e4b4f57c75e7d095212d0c0cfbfc14cd618f21745622ab2"
+        "sha256": "57fe52e1cb93218bba188467065211902e582e3441068e6fc2ce94f4f3f908b5"
       },
       "crop": {
         "route_box": [
@@ -6266,7 +6266,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_pikes.png",
-        "sha256": "cead79fe91cb7f170f71b5b7a10d5c7bbc361abcb1b1fd8e839e19fcce8b83ef"
+        "sha256": "a7d6785eb24d122c8eab6461bae82bdbfe90c5e0e5b5939a5f87057fa7b31919"
       },
       "crop": {
         "route_box": [
@@ -6479,7 +6479,7 @@
       "approach_only": true,
       "source": {
         "master": "design-data/PRINT_snowmassain.png",
-        "sha256": "11fd38b4f8cd72300382b3962b26de527122d7ec5144efeebe8b9538500864c5"
+        "sha256": "cec25a5fa7fab55ddb046c474f3a472ed689f2f4e57d12da53fe607f73dc1466"
       },
       "crop": {
         "route_box": [
@@ -6701,7 +6701,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_windom.png",
-        "sha256": "4662cef497ca8324deccbe4e7191325a5259b7ddf8347b26782d358cf6af9e09"
+        "sha256": "6ea0c8b15077de5a8bfe51a95d8c3178da118c4effdd230af94b07966bd29236"
       },
       "crop": {
         "route_box": [
@@ -6914,7 +6914,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_eolus.png",
-        "sha256": "db4e738a5ac1cbeb106f0099b2699d16c87993158b314c3d49c199f193336f80"
+        "sha256": "14cac9d725ff33abad3471d450c4ff0c432126a6742d3a0d7a4c096253a102f5"
       },
       "crop": {
         "route_box": [
@@ -7127,7 +7127,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_challengerpoin.png",
-        "sha256": "37d26bbcd266665c604f29aa35c194042a6417bef225e35e6008fd499cc5d4ac"
+        "sha256": "4c5d721e4d7c9b941ca968389638d57b73e656a2e4bfbd8857eeaf28e989f056"
       },
       "crop": {
         "route_box": [
@@ -7340,7 +7340,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_columbia.png",
-        "sha256": "e45f5e19afbd7786e3bb7d0398661a62f4ca4c2fd3da20661b5284ff6d8b5b5d"
+        "sha256": "4483e3f85b9748c362401caa67008350da1bd97d39c0478e91618cc34cdff683"
       },
       "crop": {
         "route_box": [
@@ -7553,7 +7553,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_missouriain.png",
-        "sha256": "9ed6fb2a6574d6d107090371249db6c0265cecc0b1383aafd713dfdf1a47eb6f"
+        "sha256": "be5612a590fd0fc5eb4a2f636d2d74b758965738c76d00834b2fe5dadcfc58a5"
       },
       "crop": {
         "route_box": [
@@ -7766,7 +7766,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_humboldt.png",
-        "sha256": "20579a056bc87dfc79b4ebaf5e81cba3efb2feb93b8b5f28293aa2bd274e27ec"
+        "sha256": "ffd9e336634d21a5c422daec27db1a858e9aeffbfdc3f666d97949b2127c6ae0"
       },
       "crop": {
         "route_box": [
@@ -7979,7 +7979,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_bierstadt.png",
-        "sha256": "16ac216aae9e7bb547ab09f1b7cf26592f1b7ce5ebc841f94aadf391e550bf60"
+        "sha256": "46406c13de82d84e3c2ba71e7afc5a17baf80fe38ae6cdd6ba92f0ce1815c608"
       },
       "crop": {
         "route_box": [
@@ -8192,7 +8192,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_sunlight.png",
-        "sha256": "efb744d3d9eef19e4db72986e661360e21b1052eec29433822e15c19c6537b88"
+        "sha256": "3e1e86572191785962138de974ae661dbf6e7db6ab87d24cbe0b7ce24311ab51"
       },
       "crop": {
         "route_box": [
@@ -8405,7 +8405,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_handies.png",
-        "sha256": "117faee1e8182a8936c8ed232511a04f83dc28eff924cd0dcbe8d0070362d413"
+        "sha256": "9a42be86b29cc0ee9fc636c119f89cdbcbeb79d4699cad56f6b231e94eb87991"
       },
       "crop": {
         "route_box": [
@@ -8618,7 +8618,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_culebra.png",
-        "sha256": "1d51020a0312b46cac1e25d3f61e389c584a1dbbb2f85aa19fd68923a3cf878e"
+        "sha256": "ff96e5d5355e08b503e45455448df26c0d62f71a030d8e8d015b01d5fc98aa31"
       },
       "crop": {
         "route_box": [
@@ -8831,7 +8831,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_ellingwoodpoin.png",
-        "sha256": "2a09cb15c39bf27d5e95d58ed2c8b5975f0503e91e5b220f2a7ab652d8badd61"
+        "sha256": "d528d3ae5b6eca3c8ee02a9444646a399ac906780895d5c06d8eec8dd04ddf7c"
       },
       "crop": {
         "route_box": [
@@ -9044,7 +9044,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_lindsey.png",
-        "sha256": "bf83fa84e38ec66d4c520ffda4069d06421791c0a21f2ba0c2c46d06865b9d67"
+        "sha256": "11e27a9f217f50a2541aa759bf1bb8edf8b6c0f8bf70b287aa9fc34f5be6fa70"
       },
       "crop": {
         "route_box": [
@@ -9257,7 +9257,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_littlebear.png",
-        "sha256": "73a632b206a6ce837d68a2228ce0184b7261b622376ac9a5987fb3711151f184"
+        "sha256": "6581d20c20f71f7e30b1000155995caac9c6d543c7300f281ae5ebd72aad6bf1"
       },
       "crop": {
         "route_box": [
@@ -9470,7 +9470,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_sherman.png",
-        "sha256": "d61615b55407d4c1dc56b3393705c1e9400c51fa46e08e8b1ac1ae65b858a5ba"
+        "sha256": "de09c8e064764aa3b73520dd317ad339c6e4cde4966f6b7a4996787a0f82ba84"
       },
       "crop": {
         "route_box": [
@@ -9683,7 +9683,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_redcloud.png",
-        "sha256": "0384f1fe2c2de55b23db9ba87ad7acddb96e16d15dd64e0b86413916225846fa"
+        "sha256": "1093af8f6ac1e3ab9c48b964c61c4bbde2a828c0c450dbd0b1638fcfc5f53f1b"
       },
       "crop": {
         "route_box": [
@@ -9896,7 +9896,7 @@
       "approach_only": true,
       "source": {
         "master": "design-data/PRINT_pyramid.png",
-        "sha256": "d75ec2abfac3bace8868e765a0eb1339a5b39bec7f32ebab31ca8091cadfc955"
+        "sha256": "2143fb828505e19538163337ebcd062fd96edd71a866125269d4b3453b6d0f86"
       },
       "crop": {
         "route_box": [
@@ -10118,7 +10118,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_wilson.png",
-        "sha256": "dabf3db62874909e7c98e2fe6d5697dd33c91a342f17149fd2f54fac8f110049"
+        "sha256": "05ca07a19c56d3166fa9d7fc02ca096f02b0c99e6c6519fd698f13104f8a3f3f"
       },
       "crop": {
         "route_box": [
@@ -10331,7 +10331,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_sanluis.png",
-        "sha256": "500b67706858e63aaaf59c19f192c1523a02402ceae4c84b61b8ac4f28fe0a55"
+        "sha256": "d3ca8bba7c4667deedf6ee4a4d22dc14fee8526e9976ef49ad11bb64e08f76ef"
       },
       "crop": {
         "route_box": [
@@ -10544,7 +10544,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_wetterhorn.png",
-        "sha256": "53bf2d022516823a5c7635f44e21fffb06c53b572847e98fe444ca4333390161"
+        "sha256": "1793acdbfab291e0094d7b84af3208d587c2b915753fb11c8a70b5619c6caeed"
       },
       "crop": {
         "route_box": [
@@ -10757,7 +10757,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_oftheholycross.png",
-        "sha256": "b9d88714027b46c5100f6ce84fbe009c944e59b3f09c123953ad0c57c2ecfddd"
+        "sha256": "a76c3376a7e2b0ff9ba43320c9c4d7646482459ac00c01f27a1899b42d36dccb"
       },
       "crop": {
         "route_box": [
@@ -10970,7 +10970,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_huron.png",
-        "sha256": "b44506b1a643b21846ff3450bb948fe2a1a49c144cf0b6e788de964351f3cf72"
+        "sha256": "328e6e5d0faa521144853a3d9b6a9c59be886b7020fe227251620b3c4fd54555"
       },
       "crop": {
         "route_box": [
@@ -11183,7 +11183,7 @@
       "approach_only": false,
       "source": {
         "master": "design-data/PRINT_sunshine.png",
-        "sha256": "92229f94fdb6f63f23b65fc8601025ff5fc2fda61c008d20690bf9c5851418ec"
+        "sha256": "f5c3b7010c9b1e66f494da585f00e6f9193cd9f555871eb33efa815bcc02cbdd"
       },
       "crop": {
         "route_box": [
