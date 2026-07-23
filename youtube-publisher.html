@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sendlines Shorts Publisher</title>
+  <meta name="description" content="The official YouTube Data API integration used to publish approved Sendlines Shorts.">
+  <link rel="canonical" href="https://sendlines.com/youtube-publisher.html">
+  <meta property="og:url" content="https://sendlines.com/youtube-publisher.html">
+  <meta property="og:title" content="Sendlines Shorts Publisher">
+  <meta property="og:description" content="The official YouTube Data API integration used to publish approved Sendlines Shorts.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/sendlines-v2.css?v=20260718-1">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <script defer src="/assets/sendlines-v2.js?v=20260718-1"></script>
+  <style>.site-header{position:static}</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner"><a href="/" aria-label="Sendlines home"><strong>SENDLINES</strong></a><nav class="desktop-nav" aria-label="Primary"><a href="/">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a class="button" href="https://www.youtube.com/@sendlinespress" rel="me noopener">View on YouTube</a></nav></div></header>
+  <main id="main">
+    <section class="editorial-hero">
+      <div class="shell editorial-narrow">
+        <p class="eyebrow">INTERNAL PUBLISHING TOOL</p>
+        <h1>Sendlines Shorts Publisher.</h1>
+        <p class="editorial-lead">A private, owner-operated integration that uses the YouTube Data API to publish approved Sendlines videos to <a href="https://www.youtube.com/@sendlinespress" rel="me noopener">YouTube @sendlinespress</a>.</p>
+      </div>
+    </section>
+    <section class="editorial-body">
+      <div class="shell editorial-narrow">
+        <div class="policy-sections">
+          <section><h2>What it does.</h2><p>The tool verifies the authorized Sendlines channel, uploads one approved vertical video with its exact approved title and description, and reads the resulting video status back from the YouTube Data API. It records success only after the destination, metadata, and visibility are verified.</p></section>
+          <section><h2>Who can use it.</h2><p>This is an internal company tool used only by authorized Virtual City LLC personnel for the single Sendlines-owned channel. It is not a public software service, does not accept third-party accounts, and does not publish on behalf of customers.</p></section>
+          <section><h2>Permissions.</h2><p>The OAuth consent flow requests only <code>youtube.upload</code> and <code>youtube.readonly</code>. The tool does not request YouTube Analytics, advertising, comments, subscriptions, messaging, or payment permissions.</p></section>
+          <section><h2>Safety controls.</h2><p>Every upload is approval-bound to an exact video and exact channel-specific copy. The publisher checks schedule and cadence, verifies the expected channel ID, prevents duplicates, never blindly retries an ambiguous upload, and stops if authorization or public-visibility verification fails.</p></section>
+          <section><h2>Required operator consent.</h2><p>This public page is descriptive and does not accept files, start OAuth, or upload to YouTube. In the owner-operated command-line client, a read-only preflight displays the current privacy-policy version, exact title and description, channel, audience declaration, exact approved post hash, selected MP4 SHA-256, and selected YouTube visibility. At commit, the operator must choose either <strong>Confirm</strong> or <strong>Return to edit</strong>. Confirm requires interactive policy acceptance, YouTube's upload certification, an exact Made-for-Kids selection, visibility selection, and one exact, one-shot confirmation. Return to edit creates a new draft revision, preserves the superseded item's evidence, clears the new revision's approvals, routes it to independent Quality and Legal review, and stops the upload. A changed file or reviewed field invalidates consent and stops before contacting YouTube.</p></section>
+          <section><h2>Authorization health.</h2><p>Interactive acceptance writes a non-secret receipt for the current published policy version. Only while that receipt remains current may the unattended health check refresh the stored OAuth grant and verify that it still resolves to the expected Sendlines channel. Through governed state mutation, the check records its readiness status, timestamp, channel-match result, dependency category, current policy version, and an explicit marker that no credential value was stored; it never writes credentials or provider-returned identifiers. Missing credentials, provider failures, and network failures remain distinct. A typed <code>invalid_grant</code> is treated as authorization that cannot be reconfirmed, causing cleanup and a publication freeze rather than being mislabeled as proof of user revocation.</p></section>
+          <section><h2>Data controls.</h2><p>Credentials remain in the operating system's encrypted credential store. See the <a href="/privacy.html">privacy policy</a> for collection, retention, deletion, and revocation details. Access can be revoked through <a href="https://security.google.com/settings/security/permissions" rel="noopener">Google Security Settings</a>.</p></section>
+          <section><h2>Policies.</h2><p>Use of this tool is subject to the <a href="/terms.html">Sendlines integration terms</a>, the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>, the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" rel="noopener">YouTube API Services Terms of Service</a>, and the <a href="https://developers.google.com/youtube/terms/developer-policies" rel="noopener">YouTube API Services Developer Policies</a>.</p></section>
+          <section><h2>Contact.</h2><p>Operator: Virtual City LLC, dba Sendlines, Colorado, USA. Contact: <a href="mailto:virtualcityhq@gmail.com">virtualcityhq@gmail.com</a>.</p></section>
+        </div>
+        <p class="micro">LAST UPDATED JULY 21, 2026</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell"><div class="footer-grid"><div><p class="footer-statement">A climber's memory, kept with a surveyor's discipline.</p></div><div><h2>YouTube Data API</h2><p>Minimum-scope publishing for the Sendlines-owned channel.</p></div><div><h2>Index</h2><a href="/">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="https://www.youtube.com/@sendlinespress" rel="me noopener">YouTube @sendlinespress</a></div></div><div class="footer-bottom">SENDLINES · REAL LINES, FROM REAL PLACES</div></div></footer>
+</body>
+</html>
