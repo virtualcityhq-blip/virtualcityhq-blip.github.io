@@ -1,0 +1,140 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Collaboration Print Order | Sendlines</title>
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="/assets/sendlines-v2.css?v=20260718-1">
+<link rel="icon" type="image/png" href="/favicon.png">
+<style>
+/* scoped to this page only - the shared stylesheet has no order grid */
+.af-grid{width:100%;border-collapse:collapse;margin:1.4rem 0 .4rem}
+.af-grid th{font:600 .68rem/1.2 var(--mono,ui-monospace,monospace);letter-spacing:.14em;
+  text-transform:uppercase;color:#6f6a61;text-align:center;padding:0 0 .6rem}
+.af-grid th.af-l{text-align:left}
+.af-grid td{border-top:1px solid rgba(34,30,25,.12);padding:.55rem .2rem}
+.af-grid tr:first-child td{border-top:2px solid rgba(34,30,25,.55)}
+.af-n{font:600 .78rem/1 var(--mono,ui-monospace,monospace);color:#C08A2E;padding-right:.6rem}
+.af-r strong{display:block;font-size:.95rem;line-height:1.25}
+.af-r span{display:block;font:.7rem/1.3 var(--mono,ui-monospace,monospace);
+  letter-spacing:.08em;text-transform:uppercase;color:#8b857c;margin-top:.15rem}
+.af-grid input[type=number]{width:3.4rem;text-align:center;padding:.45rem .2rem;font-size:1rem}
+.af-qty{width:4.6rem}
+.af-h{font:600 .74rem/1 var(--mono,ui-monospace,monospace);letter-spacing:.16em;text-transform:uppercase;color:#1B303C;margin:2rem 0 .2rem}
+.af-sub{margin:.35rem 0 0;font-size:.9rem;color:#6f6a61}
+.af-open input[type=text]{width:100%;box-sizing:border-box}
+.af-open td:last-child{width:5rem}
+.af-note{margin-top:1.6rem;padding:1rem 1.1rem;border-left:3px solid #C08A2E;background:rgba(192,138,46,.07)}
+.af-note strong{display:block;margin-bottom:.25rem}
+@media (max-width:520px){
+  .af-grid th{font-size:.6rem;letter-spacing:.08em}
+  .af-r strong{font-size:.85rem}
+  .af-grid input[type=number]{width:2.9rem}
+}
+</style></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="/" aria-label="Sendlines home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1214.24 360"><g transform="scale(0.40) translate(-30,-10)"><clipPath id="tt"><polygon points="128,433 512,64 896,433"/></clipPath><clipPath id="bt"><polygon points="128,451 896,451 512,820"/></clipPath><polygon points="128,433 512,64 896,433" fill="#4787A3"/><g clip-path="url(#tt)"><path d="M150,205 C330,160 560,240 900,175" fill="none" stroke="#1B303C" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" /><path d="M140,285 C360,235 600,320 905,250" fill="none" stroke="#1B303C" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" /><path d="M130,360 C380,310 620,395 910,330" fill="none" stroke="#1B303C" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" /></g><g clip-path="url(#tt)"><path d="M128,433 L286,398 L398,424 L560,318 L648,382 L724,362 L896,433 Z" fill="#1B303C"/></g><polygon points="560,318 536,356 584,356" fill="#F6F1E6"/><polygon points="128,451 896,451 512,820" fill="#1B303C"/><g clip-path="url(#bt)"><line x1="128" y1="492" x2="896" y2="492" stroke="#F6F1E6" stroke-width="13"/><line x1="128" y1="538" x2="896" y2="538" stroke="#F6F1E6" stroke-width="13"/><line x1="128" y1="584" x2="896" y2="584" stroke="#F6F1E6" stroke-width="13"/><line x1="128" y1="630" x2="896" y2="630" stroke="#F6F1E6" stroke-width="13"/><line x1="128" y1="676" x2="896" y2="676" stroke="#F6F1E6" stroke-width="13"/><line x1="128" y1="722" x2="896" y2="722" stroke="#F6F1E6" stroke-width="13"/><line x1="128" y1="768" x2="896" y2="768" stroke="#F6F1E6" stroke-width="13"/></g><polygon points="128,433 512,64 896,433" fill="none" stroke="#1B303C" stroke-width="22" stroke-linejoin="round"/><polygon points="128,451 896,451 512,820" fill="none" stroke="#1B303C" stroke-width="22" stroke-linejoin="round"/></g><g transform="translate(420,128) scale(0.94)"><path d="M50,17 C47,6 16,1 10,15 C5,28 15,37 28,43 C43,50 53,59 48,77 C43,93 12,98 6,83" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M90,6 L90,94 M90,6 L132,6 M90,50 L126,50 M90,94 L132,94" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M174,94 L174,6 L220,94 L220,6" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M262,6 L262,94 M262,6 L278,6 C306,6 306,94 278,94 L262,94" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M346,6 L346,94 L384,94" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M426,6 L426,94" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M468,94 L468,6 L514,94 L514,6" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M556,6 L556,94 M556,6 L598,6 M556,50 L592,50 M556,94 L598,94" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /><path d="M682,17 C679,6 648,1 642,15 C637,28 647,37 660,43 C675,50 685,59 680,77 C675,93 644,98 638,83" fill="none" stroke="#1B303C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" /></g></svg></a>
+</div></header>
+
+<main id="main">
+<section class="editorial-hero"><div class="shell editorial-narrow">
+<p class="eyebrow">ACCESS FUND 35TH · SEPTEMBER 26, 2026</p>
+<h1>Collaboration print order</h1>
+<p class="editorial-lead">Every print here is a <strong>12-inch mounted board, ready to hang</strong> — rigid, no frame needed. <strong>$55 each.</strong> Tell me what you want and I'll print it; nothing is charged today.</p>
+</div></section>
+
+<section class="editorial-body"><div class="shell editorial-narrow">
+
+<form class="request-form" id="af-form" method="POST"
+      action="https://formsubmit.co/virtualcityhq@gmail.com"
+      target="af-target" data-af-form>
+
+  <input type="hidden" name="_subject" value="Sendlines - Access Fund print order">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <label>Name<input name="Name" type="text" autocomplete="name" required></label>
+  <div class="request-row">
+    <label>Email<input name="Email" type="email" autocomplete="email" required></label>
+    <label>Phone <span class="optional">Optional</span><input name="Phone" type="tel" autocomplete="tel"></label>
+  </div>
+  <label>Pick up in Denver, or ship to me
+    <select name="Delivery" required>
+      <option value="" selected disabled>Choose one</option>
+      <option>Pick up in Denver</option>
+      <option>Ship to me</option>
+    </select></label>
+  <label>Shipping address <span class="optional">Only if shipping</span>
+    <textarea name="Shipping address" rows="2"></textarea></label>
+
+  <h2 class="af-h">The Access Fund seven</h2>
+  <table class="af-grid">
+    <thead><tr><th class="af-l" colspan="2">Route</th><th>Qty</th></tr></thead>
+    <tbody>
+      <tr><td class="af-n">01</td><td class="af-r"><strong>The Bastille Crack</strong><span>Eldorado Canyon · 5.7</span></td><td><input type="number" min="0" max="20" name="01 The Bastille Crack" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">02</td><td class="af-r"><strong>Empor</strong><span>Cob Rock, Boulder Canyon · 5.7+</span></td><td><input type="number" min="0" max="20" name="02 Empor" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">03</td><td class="af-r"><strong>East Face Standard</strong><span>Third Flatiron · 5.4</span></td><td><input type="number" min="0" max="20" name="03 East Face Standard" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">04</td><td class="af-r"><strong>Big Dihedral</strong><span>North Table Mountain · 5.8</span></td><td><input type="number" min="0" max="20" name="04 Big Dihedral" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">05</td><td class="af-r"><strong>Pear Buttress</strong><span>Lumpy Ridge · 5.8</span></td><td><input type="number" min="0" max="20" name="05 Pear Buttress" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">06</td><td class="af-r"><strong>Crynoid Corner</strong><span>Cactus Cliff, Shelf Road · 5.7</span></td><td><input type="number" min="0" max="20" name="06 Crynoid Corner" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">07</td><td class="af-r"><strong>D1</strong><span>The Diamond, Longs Peak · 5.12a</span></td><td><input type="number" min="0" max="20" name="07 D1" placeholder="0" inputmode="numeric"></td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="af-h">From the rest of the collection</h2>
+  <p class="af-sub">Any of the 58 Colorado 14ers, or any route in the climbing series — browse them at <a href="/">sendlines.com</a>. Same board, same price.</p>
+  <table class="af-grid af-open">
+    <thead><tr><th class="af-l">Peak or route</th><th>Qty</th></tr></thead>
+    <tbody>
+      <tr><td><input type="text" name="Collection 1" placeholder="Longs Peak" autocomplete="off"></td><td><input type="number" min="0" max="20" name="Collection 1 qty" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td><input type="text" name="Collection 2" placeholder="Country Club Crack" autocomplete="off"></td><td><input type="number" min="0" max="20" name="Collection 2 qty" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td><input type="text" name="Collection 3" placeholder="…" autocomplete="off"></td><td><input type="number" min="0" max="20" name="Collection 3 qty" placeholder="0" inputmode="numeric"></td></tr>
+    </tbody>
+  </table>
+
+  <label>Anything else <span class="optional">Optional</span>
+    <textarea name="Notes" rows="2" placeholder="Met you at the table, a route that means something, a deadline…"></textarea></label>
+
+  <div class="af-note"><strong>Nothing is charged today.</strong>
+    I'll print your order and get in touch when it's ready — you pay on delivery.</div>
+
+  <button class="button" type="submit" style="margin-top:1.4rem">Send order</button>
+  <p class="request-status" id="af-status" aria-live="polite"></p>
+</form>
+
+<div class="request-success" id="af-success" hidden>
+  <p class="eyebrow">ORDER RECEIVED</p>
+  <h2>Got it — thank you.</h2>
+  <p>I'll be in touch when your print is ready. Nothing has been charged.</p>
+</div>
+
+<iframe name="af-target" title="Order submission" hidden data-af-frame></iframe>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="shell">
+<div class="footer-bottom">SENDLINES · REAL LINES, FROM REAL PLACES</div>
+</div></footer>
+
+<script>
+(function(){
+  var f=document.getElementById('af-form'),
+      s=document.getElementById('af-status'),
+      ok=document.getElementById('af-success'),
+      frame=document.querySelector('[data-af-frame]'), sent=false;
+  if(!f) return;
+  f.addEventListener('submit', function(e){
+    var n=0, i, ins=f.querySelectorAll('input[type=number]');
+    for(i=0;i<ins.length;i++){ n += (parseInt(ins[i].value,10)||0); }
+    if(n===0){ s.textContent='Add at least one print before sending.';
+      e.preventDefault(); return false; }
+    sent=true; s.textContent='Sending…';
+  });
+  frame.addEventListener('load', function(){
+    if(!sent) return;
+    f.hidden=true; ok.hidden=false;
+    ok.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+})();
+</script>
+</body></html>
