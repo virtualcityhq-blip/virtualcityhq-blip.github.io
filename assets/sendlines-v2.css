@@ -15,6 +15,11 @@
   --s8:64px;--s9:96px;--s10:128px;--max-content:1280px;--gutter:24px;
   --margin-mobile:20px;--hairline:1px solid var(--rule);
   --plate-border:1px solid rgba(31,27,22,.35);--radius:4px;
+  --hero-route-rest:.22;--plate-edge-top:rgba(31,27,22,.18);--plate-edge-side:rgba(31,27,22,.30);
+  --plate-edge-bottom:rgba(31,27,22,.40);
+  --plate-lift:0 1px 2px rgba(31,27,22,.05),0 16px 36px -24px rgba(31,27,22,.55);
+  --plate-lift-hover:0 2px 5px rgba(31,27,22,.07),0 26px 54px -26px rgba(31,27,22,.65);
+  --plate-lift-hero:0 3px 8px rgba(31,27,22,.06),0 30px 70px -30px rgba(31,27,22,.6);
   --draw-ease:cubic-bezier(.22,1,.36,1);--fade:200ms ease-out;
   --serif:Newsreader,'Iowan Old Style',Georgia,serif;
   --mono:'IBM Plex Mono','SF Mono',Menlo,monospace;
@@ -73,8 +78,8 @@ main{overflow:clip}
 .hero-route :is(.trace-start,.trace-summit-halo,.trace-summit){opacity:0}
 .hero-route path{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;vector-effect:non-scaling-stroke}
 .hero-plate{position:absolute;right:8%;top:2%;height:96%;width:auto;aspect-ratio:3/4;z-index:1}
-.hero-plate img{display:block;width:100%;height:100%;object-fit:contain}
-.trace-hero.is-ready .hero-route{opacity:1}
+.hero-plate img{display:block;width:100%;height:100%;object-fit:contain;border:1px solid;border-color:var(--plate-edge-top) var(--plate-edge-side) var(--plate-edge-bottom);background:var(--paper-deep);box-shadow:var(--plate-lift-hero)}
+.trace-hero.is-ready .hero-route{opacity:var(--hero-route-rest);-webkit-mask-image:radial-gradient(115% 95% at 78% 48%,#000 42%,rgba(0,0,0,.55) 68%,transparent 90%);mask-image:radial-gradient(115% 95% at 78% 48%,#000 42%,rgba(0,0,0,.55) 68%,transparent 90%)}
 .trace-hero.is-ready .hero-route path{animation:draw 2200ms var(--draw-ease) 300ms forwards}
 .trace-hero.is-ready .hero-route :is(.trace-summit-halo,.trace-summit){animation:marker-in 300ms linear 2450ms forwards}
 .trace-hero.is-ready .hero-field{animation:fade-in 350ms ease-out 100ms forwards}
@@ -82,6 +87,7 @@ main{overflow:clip}
 @keyframes fade-in{to{opacity:1}}
 @keyframes resolve{to{opacity:1;transform:none}}
 @keyframes marker-in{to{opacity:1}}
+
 .proof-strip{border-block:var(--hairline);padding:var(--s4) 0}
 .proof-strip p{margin:0;text-align:center;color:var(--ink-soft);font:400 11px/18px var(--mono);letter-spacing:.08em;text-transform:uppercase}
 .offer-strip,.collection-offer{border-bottom:var(--hairline);background:var(--paper-deep)}
@@ -99,8 +105,8 @@ main{overflow:clip}
 .figure-media.route-only path{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .figure figcaption{border-bottom:var(--hairline);padding:var(--s3) 0;color:var(--ink-soft)}
 .plate-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5)}
-.plate-card{position:relative;display:block;text-decoration:none;border:var(--hairline);background:var(--paper);transition:border-color var(--fade)}
-.plate-card:hover{border-color:rgba(31,27,22,.35);text-decoration:none}
+.plate-card{position:relative;display:block;text-decoration:none;border:1px solid;border-color:var(--plate-edge-top) var(--plate-edge-side) var(--plate-edge-bottom);background:var(--paper-deep);box-shadow:var(--plate-lift);transition:border-color var(--fade),box-shadow var(--fade),transform var(--fade)}
+.plate-card:hover{border-color:rgba(31,27,22,.5);box-shadow:var(--plate-lift-hover);transform:translateY(-2px);text-decoration:none}
 .plate-art{position:relative;aspect-ratio:4/5;background:var(--paper-deep);overflow:hidden}
 .plate-art picture,.plate-art picture img{width:100%;height:100%}.plate-art img{object-fit:cover}
 .plate-art .card-trace{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
@@ -152,7 +158,7 @@ main{overflow:clip}
   .surveyor{grid-template-columns:1fr;gap:var(--s6)}.surveyor-copy blockquote{font-size:24px;line-height:34px}.footer-grid{grid-template-columns:1fr;gap:var(--s5)}
 }
 @media(max-width:420px){.hero-actions{align-items:stretch;display:grid;gap:var(--s2)}.button{width:100%}.trace-hero{padding-top:var(--s5)}.hero-copy .subline{margin:var(--s4) 0}.hero-stage{max-height:none}.proof-strip p{text-align:left}.peak-index tr{grid-template-columns:56px minmax(126px,1fr) 78px}.peak-index td{padding-inline:4px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}.hero-route,.hero-field,.hero-copy,.hero-plate,.reveal{opacity:1!important;transform:none!important}.trace-line{stroke-dashoffset:0!important}.card-trace :is(.trace-start,.trace-end,.trace-summit-halo,.trace-summit),.hero-route :is(.trace-summit-halo,.trace-summit){opacity:1!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}.hero-field,.hero-copy,.hero-plate,.reveal{opacity:1!important;transform:none!important}.hero-route{opacity:var(--hero-route-rest)!important;transform:none!important}.trace-line{stroke-dashoffset:0!important}.card-trace :is(.trace-start,.trace-end,.trace-summit-halo,.trace-summit),.hero-route :is(.trace-summit-halo,.trace-summit){opacity:1!important}}
 
 /* Field monographs and archive volumes */
 .breadcrumb{display:flex;gap:var(--s2);flex-wrap:wrap;padding:var(--s4) 0;color:var(--ink-faint)}
@@ -162,7 +168,7 @@ main{overflow:clip}
 .monograph-hero{border-block:var(--hairline);padding:var(--s7) 0;background:var(--paper-deep)}
 .line-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:var(--s6);align-items:stretch}
 .line-art{display:grid;grid-template-rows:minmax(0,1fr) auto;gap:var(--s3)}
-.line-crop{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper)}
+.line-crop{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper-deep);border:1px solid;border-color:var(--plate-edge-top) var(--plate-edge-side) var(--plate-edge-bottom);box-shadow:var(--plate-lift)}
 .line-crop picture,.line-crop img{width:100%;height:100%}.line-crop img{object-fit:cover}
 .line-crop .card-trace{position:absolute;inset:0;width:100%;height:100%}
 .profile-band,.profile-band img{width:100%;height:auto}.profile-band{background:var(--paper)}
