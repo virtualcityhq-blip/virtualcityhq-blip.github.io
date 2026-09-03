@@ -1,6 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Collaboration Print Order | Sendlines</title>
-<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="googlebot" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="stylesheet" href="/assets/sendlines-v2.css?v=20260718-1">
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -15,7 +16,7 @@
 .af-n{font:600 .78rem/1 var(--mono,ui-monospace,monospace);color:#C08A2E;padding-right:.6rem}
 .af-r strong{display:block;font-size:.95rem;line-height:1.25}
 .af-r span{display:block;font:.7rem/1.3 var(--mono,ui-monospace,monospace);
-  letter-spacing:.08em;text-transform:uppercase;color:#8b857c;margin-top:.15rem}
+  letter-spacing:.08em;color:#8b857c;margin-top:.15rem}
 .af-grid input[type=number]{width:3.4rem;text-align:center;padding:.45rem .2rem;font-size:1rem}
 .af-qty{width:4.6rem}
 .af-h{font:600 .74rem/1 var(--mono,ui-monospace,monospace);letter-spacing:.16em;text-transform:uppercase;color:#1B303C;margin:2rem 0 .2rem}
@@ -46,38 +47,44 @@
 <section class="editorial-body"><div class="shell editorial-narrow">
 
 <form class="request-form" id="af-form" method="POST"
-      action="https://formsubmit.co/virtualcityhq@gmail.com"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfSHGhDAqzyZM0Q56uP3mhYBM14AL925PV141qtp30GsS7Zbg/formResponse"
       target="af-target" data-af-form>
 
-  <input type="hidden" name="_subject" value="Sendlines - Access Fund print order">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+  <!-- Responses land in Jared's own Google Form. No third party sees an order. -->
+  <input type="hidden" name="entry.966058056"  id="e_name">
+  <input type="hidden" name="entry.1837305210" id="e_email">
+  <input type="hidden" name="entry.1543544766" id="e_phone">
+  <input type="hidden" name="entry.298443587"  id="e_order">
+  <input type="hidden" name="fvv" value="1">
+  <input type="hidden" name="pageHistory" value="0">
+  <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"
+         id="af-honey" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 
-  <label>Name<input name="Name" type="text" autocomplete="name" required></label>
+  <label>Name<input name="v_name" id="v_name" type="text" autocomplete="name" required></label>
   <div class="request-row">
-    <label>Email<input name="Email" type="email" autocomplete="email" required></label>
-    <label>Phone <span class="optional">Optional</span><input name="Phone" type="tel" autocomplete="tel"></label>
+    <label>Email<input name="v_email" id="v_email" type="email" autocomplete="email" required></label>
+    <label>Phone <span class="optional">Optional</span><input name="v_phone" id="v_phone" type="tel" autocomplete="tel"></label>
   </div>
   <label>Pick up in Denver, or ship to me
-    <select name="Delivery" required>
+    <select name="v_delivery" id="v_delivery" required>
       <option value="" selected disabled>Choose one</option>
       <option>Pick up in Denver</option>
       <option>Ship to me</option>
     </select></label>
   <label>Shipping address <span class="optional">Only if shipping</span>
-    <textarea name="Shipping address" rows="2"></textarea></label>
+    <textarea name="v_addr" id="v_addr" rows="2"></textarea></label>
 
   <h2 class="af-h">The Access Fund seven</h2>
   <table class="af-grid">
     <thead><tr><th class="af-l" colspan="2">Route</th><th>Qty</th></tr></thead>
     <tbody>
-      <tr><td class="af-n">01</td><td class="af-r"><strong>The Bastille Crack</strong><span>Eldorado Canyon · 5.7</span></td><td><input type="number" min="0" max="20" name="01 The Bastille Crack" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td class="af-n">02</td><td class="af-r"><strong>Empor</strong><span>Cob Rock, Boulder Canyon · 5.7+</span></td><td><input type="number" min="0" max="20" name="02 Empor" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td class="af-n">03</td><td class="af-r"><strong>East Face Standard</strong><span>Third Flatiron · 5.4</span></td><td><input type="number" min="0" max="20" name="03 East Face Standard" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td class="af-n">04</td><td class="af-r"><strong>Big Dihedral</strong><span>North Table Mountain · 5.8</span></td><td><input type="number" min="0" max="20" name="04 Big Dihedral" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td class="af-n">05</td><td class="af-r"><strong>Pear Buttress</strong><span>Lumpy Ridge · 5.8</span></td><td><input type="number" min="0" max="20" name="05 Pear Buttress" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td class="af-n">06</td><td class="af-r"><strong>Crynoid Corner</strong><span>Cactus Cliff, Shelf Road · 5.7</span></td><td><input type="number" min="0" max="20" name="06 Crynoid Corner" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td class="af-n">07</td><td class="af-r"><strong>D1</strong><span>The Diamond, Longs Peak · 5.12a</span></td><td><input type="number" min="0" max="20" name="07 D1" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">01</td><td class="af-r"><strong>The Bastille Crack</strong><span>ELDORADO CANYON · 5.7</span></td><td><input type="number" min="0" max="20" name="q" data-label="01 The Bastille Crack" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">02</td><td class="af-r"><strong>Empor</strong><span>COB ROCK, BOULDER CANYON · 5.7+</span></td><td><input type="number" min="0" max="20" name="q" data-label="02 Empor" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">03</td><td class="af-r"><strong>East Face Standard</strong><span>THIRD FLATIRON · 5.4</span></td><td><input type="number" min="0" max="20" name="q" data-label="03 East Face Standard" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">04</td><td class="af-r"><strong>Big Dihedral</strong><span>NORTH TABLE MOUNTAIN · 5.8</span></td><td><input type="number" min="0" max="20" name="q" data-label="04 Big Dihedral" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">05</td><td class="af-r"><strong>Pear Buttress</strong><span>LUMPY RIDGE · 5.8</span></td><td><input type="number" min="0" max="20" name="q" data-label="05 Pear Buttress" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">06</td><td class="af-r"><strong>Crynoid Corner</strong><span>CACTUS CLIFF, SHELF ROAD · 5.7</span></td><td><input type="number" min="0" max="20" name="q" data-label="06 Crynoid Corner" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">07</td><td class="af-r"><strong>D1</strong><span>THE DIAMOND, LONGS PEAK · 5.12a</span></td><td><input type="number" min="0" max="20" name="q" data-label="07 D1" placeholder="0" inputmode="numeric"></td></tr>
     </tbody>
   </table>
 
@@ -86,14 +93,14 @@
   <table class="af-grid af-open">
     <thead><tr><th class="af-l">Peak or route</th><th>Qty</th></tr></thead>
     <tbody>
-      <tr><td><input type="text" name="Collection 1" placeholder="Longs Peak" autocomplete="off"></td><td><input type="number" min="0" max="20" name="Collection 1 qty" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td><input type="text" name="Collection 2" placeholder="Country Club Crack" autocomplete="off"></td><td><input type="number" min="0" max="20" name="Collection 2 qty" placeholder="0" inputmode="numeric"></td></tr>
-      <tr><td><input type="text" name="Collection 3" placeholder="…" autocomplete="off"></td><td><input type="number" min="0" max="20" name="Collection 3 qty" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td><input type="text" name="cn" data-row="1" placeholder="Longs Peak" autocomplete="off"></td><td><input type="number" min="0" max="20" name="cq" data-row="1" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td><input type="text" name="cn" data-row="2" placeholder="Country Club Crack" autocomplete="off"></td><td><input type="number" min="0" max="20" name="cq" data-row="2" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td><input type="text" name="cn" data-row="3" placeholder="Mount Elbert" autocomplete="off"></td><td><input type="number" min="0" max="20" name="cq" data-row="3" placeholder="0" inputmode="numeric"></td></tr>
     </tbody>
   </table>
 
   <label>Anything else <span class="optional">Optional</span>
-    <textarea name="Notes" rows="2" placeholder="Met you at the table, a route that means something, a deadline…"></textarea></label>
+    <textarea name="v_notes" id="v_notes" rows="2" placeholder="Met you at the table, a route that means something, a deadline…"></textarea></label>
 
   <div class="af-note"><strong>Nothing is charged today.</strong>
     I'll print your order and get in touch when it's ready — you pay on delivery.</div>
@@ -123,11 +130,30 @@
       ok=document.getElementById('af-success'),
       frame=document.querySelector('[data-af-frame]'), sent=false;
   if(!f) return;
+  function val(id){ var e=document.getElementById(id); return e ? e.value.trim() : ''; }
   f.addEventListener('submit', function(e){
-    var n=0, i, ins=f.querySelectorAll('input[type=number]');
-    for(i=0;i<ins.length;i++){ n += (parseInt(ins[i].value,10)||0); }
+    if(document.getElementById('af-honey').value){ e.preventDefault(); return false; }
+    var lines=[], n=0, i;
+    var qs=f.querySelectorAll('input[data-label]');
+    for(i=0;i<qs.length;i++){
+      var v=parseInt(qs[i].value,10)||0;
+      if(v>0){ lines.push(qs[i].getAttribute('data-label')+'  x'+v); n+=v; }
+    }
+    var names=f.querySelectorAll('input[name="cn"]'), qtys=f.querySelectorAll('input[name="cq"]');
+    for(i=0;i<names.length;i++){
+      var t=names[i].value.trim(), q=parseInt(qtys[i].value,10)||0;
+      if(t){ lines.push(t+'  x'+(q||1)); n+=(q||1); }
+    }
     if(n===0){ s.textContent='Add at least one print before sending.';
       e.preventDefault(); return false; }
+    var out='PRINTS\n'+lines.join('\n')+'\n\nTOTAL  '+n+' x $55 = $'+(n*55);
+    var d=val('v_delivery'); if(d) out+='\n\nDELIVERY  '+d;
+    var a=val('v_addr');     if(a) out+='\nSHIP TO\n'+a;
+    var note=val('v_notes'); if(note) out+='\n\nNOTES\n'+note;
+    document.getElementById('e_order').value=out;
+    document.getElementById('e_name').value=val('v_name');
+    document.getElementById('e_email').value=val('v_email');
+    document.getElementById('e_phone').value=val('v_phone');
     sent=true; s.textContent='Sending…';
   });
   frame.addEventListener('load', function(){
