@@ -41,7 +41,7 @@
 <section class="editorial-hero"><div class="shell editorial-narrow">
 <p class="eyebrow">ACCESS FUND 35TH · SEPTEMBER 26, 2026</p>
 <h1>Collaboration print order</h1>
-<p class="editorial-lead">Every print here is a <strong>12-inch mounted board, ready to hang</strong> — rigid, no frame needed. <strong>$55 each.</strong> Tell me what you want and I'll print it; nothing is charged today.</p>
+<p class="editorial-lead">Every print here is <strong>11 × 14 inches on double-thick card stock</strong> — heavy, flat, ready to frame. <strong>$30 each, or 2 for $50.</strong> Tell me what you want and I'll print it; nothing is charged today.</p>
 </div></section>
 
 <section class="editorial-body"><div class="shell editorial-narrow">
@@ -74,7 +74,7 @@
   <label>Shipping address <span class="optional">Only if shipping</span>
     <textarea name="v_addr" id="v_addr" rows="2"></textarea></label>
 
-  <h2 class="af-h">The Access Fund seven</h2>
+  <h2 class="af-h">At the table</h2>
   <table class="af-grid">
     <thead><tr><th class="af-l" colspan="2">Route</th><th>Qty</th></tr></thead>
     <tbody>
@@ -85,11 +85,13 @@
       <tr><td class="af-n">05</td><td class="af-r"><strong>Pear Buttress</strong><span>LUMPY RIDGE · 5.8</span></td><td><input type="number" min="0" max="20" name="q" data-label="05 Pear Buttress" placeholder="0" inputmode="numeric"></td></tr>
       <tr><td class="af-n">06</td><td class="af-r"><strong>Crynoid Corner</strong><span>CACTUS CLIFF, SHELF ROAD · 5.7</span></td><td><input type="number" min="0" max="20" name="q" data-label="06 Crynoid Corner" placeholder="0" inputmode="numeric"></td></tr>
       <tr><td class="af-n">07</td><td class="af-r"><strong>D1</strong><span>THE DIAMOND, LONGS PEAK · 5.12a</span></td><td><input type="number" min="0" max="20" name="q" data-label="07 D1" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">08</td><td class="af-r"><strong>Longs Peak</strong><span>TOPOGRAPHIC · 14,259 FT</span></td><td><input type="number" min="0" max="20" name="q" data-label="08 Longs Peak topo" placeholder="0" inputmode="numeric"></td></tr>
+      <tr><td class="af-n">09</td><td class="af-r"><strong>Mount Bierstadt</strong><span>TOPOGRAPHIC · 14,065 FT</span></td><td><input type="number" min="0" max="20" name="q" data-label="09 Mount Bierstadt topo" placeholder="0" inputmode="numeric"></td></tr>
     </tbody>
   </table>
 
   <h2 class="af-h">From the rest of the collection</h2>
-  <p class="af-sub">Any of the 58 Colorado 14ers, or any route in the climbing series — browse them at <a href="/">sendlines.com</a>. Same board, same price.</p>
+  <p class="af-sub">Any of the 58 Colorado 14ers, or any route in the climbing series — browse them at <a href="/">sendlines.com</a>. Same stock, same price.</p>
   <table class="af-grid af-open">
     <thead><tr><th class="af-l">Peak or route</th><th>Qty</th></tr></thead>
     <tbody>
@@ -146,7 +148,8 @@
     }
     if(n===0){ s.textContent='Add at least one print before sending.';
       e.preventDefault(); return false; }
-    var out='PRINTS\n'+lines.join('\n')+'\n\nTOTAL  '+n+' x $55 = $'+(n*55);
+    var amt=Math.floor(n/2)*50+(n%2)*30;
+    var out='PRINTS\n'+lines.join('\n')+'\n\nTOTAL  '+n+' print'+(n>1?'s':'')+' = $'+amt+'  ($30 each, 2 for $50)';
     var d=val('v_delivery'); if(d) out+='\n\nDELIVERY  '+d;
     var a=val('v_addr');     if(a) out+='\nSHIP TO\n'+a;
     var note=val('v_notes'); if(note) out+='\n\nNOTES\n'+note;
