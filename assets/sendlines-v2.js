@@ -124,7 +124,7 @@
     if (!navigator.onLine) {
       event.preventDefault();
       if (requestStatus) {
-        requestStatus.textContent = 'No connection. Reconnect and try again, or open the original form below.';
+        requestStatus.textContent = 'No connection. Reconnect and try again.';
         requestStatus.classList.add('is-error');
       }
       return;
@@ -139,7 +139,7 @@
       if (requestForm.hidden) return;
       requestForm.querySelector('button[type="submit"]')?.removeAttribute('disabled');
       if (requestStatus) {
-        requestStatus.textContent = 'We could not confirm the request. Try again, or open the original form below.';
+        requestStatus.textContent = 'We could not confirm the request. Please try again in a moment.';
         requestStatus.classList.add('is-error');
       }
     }, 15000);
