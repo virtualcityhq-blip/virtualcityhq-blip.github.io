@@ -13,7 +13,8 @@
   const menu = document.querySelector('[data-mobile-menu]');
   document.querySelectorAll('.desktop-nav a,.mobile-menu a').forEach(link => {
     const url = new URL(link.href, location.href);
-    const isCurrent = url.origin === location.origin && url.pathname === location.pathname && !url.hash;
+    const normalize = path => path.replace(/\/index\.html$/, '/');
+    const isCurrent = url.origin === location.origin && normalize(url.pathname) === normalize(location.pathname) && !url.hash;
     if (isCurrent) link.setAttribute('aria-current', 'page');
   });
   let priorFocus = null;

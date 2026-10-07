@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://sendlines.com/climbing/sitemap.xml
