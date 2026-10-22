@@ -22,6 +22,7 @@
     var chips = root.querySelector(".slmap-chips");
     var s = 1, tx = 0, ty = 0, MAX = 7, selected = null, range = "";
     var byId = {};
+    var HIT = (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) ? 24 : 15;
 
     /* range labels */
     var rg = el("g", {}, svg);
@@ -34,16 +35,16 @@
 
     /* markers */
     var mg = el("g", {}, svg);
-    D.points.forEach(function (p) {
+    var ORDER = { photo: 0, crag: 1, peak: 2 }; /* draw peaks last so they win overlapping taps */
+    D.points.slice().sort(function (a, b) { return ORDER[a.kind] - ORDER[b.kind]; }).forEach(function (p) {
       var g = el("g", { "class": "slmap-pt", tabindex: "0", role: "button", "data-kind": p.kind, "data-id": p.id, "data-range": p.range || "", "data-top": p.top ? "1" : "0", "aria-label": p.name + (p.elev ? ", " + p.elev + " feet" : ""), transform: "translate(" + p.x + " " + p.y + ")" }, mg);
       var inner = el("g", { "class": "slmap-s" }, g);
-      el("circle", { "class": "hit", r: 15 }, inner);
+      el("circle", { "class": "hit", r: HIT }, inner);
       el("circle", { "class": "ring", r: 13 }, inner);
       if (p.kind === "peak") el("path", { "class": "tri", d: "M0 -8 L7.4 5.6 L-7.4 5.6 Z" }, inner);
       else el("circle", { "class": "dot", r: 6 }, inner);
       var t = el("text", { "class": "lbl", x: 11, y: 4 }, inner); t.textContent = p.name;
       byId[p.id] = { p: p, g: g };
-      g.addEventListener("click", function (e) { e.stopPropagation(); select(p.id, false); });
       g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(p.id, false); } });
     });
 
@@ -90,14 +91,16 @@
     var ptrs = {}, last = null, moved = false;
     stage.addEventListener("pointerdown", function (e) {
       if (e.target.closest && e.target.closest(".slmap-zoom")) return;
-      ptrs[e.pointerId] = { x: e.clientX, y: e.clientY }; moved = false;
+      ptrs[e.pointerId] = { x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, cap: false }; moved = false;
       last = null;
-      try { stage.setPointerCapture(e.pointerId); } catch (_) {}
     });
     stage.addEventListener("pointermove", function (e) {
       if (!ptrs[e.pointerId]) return;
       var ids = Object.keys(ptrs), prev = ptrs[e.pointerId];
       var dx = e.clientX - prev.x, dy = e.clientY - prev.y;
+      /* a tap must stay a tap: only capture the pointer once it has really moved */
+      if (!prev.cap && Math.hypot(e.clientX - prev.sx, e.clientY - prev.sy) < 6) return;
+      if (!prev.cap) { prev.cap = true; try { stage.setPointerCapture(e.pointerId); } catch (_) {} }
       if (ids.length === 2) {
         var o = ptrs[ids[0] == e.pointerId ? ids[1] : ids[0]];
         var d0 = Math.hypot(prev.x - o.x, prev.y - o.y), d1 = Math.hypot(e.clientX - o.x, e.clientY - o.y);
@@ -107,11 +110,23 @@
       } else if (s > 1.02 && (Math.abs(dx) + Math.abs(dy) > 0)) {
         tx += dx; ty += dy; apply(); moved = true; stage.classList.add("is-drag");
       }
-      ptrs[e.pointerId] = { x: e.clientX, y: e.clientY };
+      prev.x = e.clientX; prev.y = e.clientY;
     });
     function up(e) { delete ptrs[e.pointerId]; stage.classList.remove("is-drag"); }
     stage.addEventListener("pointerup", up); stage.addEventListener("pointercancel", up);
-    stage.addEventListener("click", function () { if (!moved) clearSel(); });
+    /* taps resolve to the nearest visible mark, so crowded ranges stay selectable */
+    stage.addEventListener("click", function (e) {
+      if (moved) return;
+      if (e.target.closest && (e.target.closest(".slmap-zoom") || e.target.closest(".slmap-range"))) return;
+      var best = null, bd = HIT + 8;
+      Object.keys(byId).forEach(function (id) {
+        var r = byId[id]; if (r.g.classList.contains("is-dim") || r.g.getBoundingClientRect().width === 0) return;
+        var c = r.g.querySelector(".hit").getBoundingClientRect();
+        var d = Math.hypot(e.clientX - (c.left + c.width / 2), e.clientY - (c.top + c.height / 2)) - (r.p.kind === "peak" ? 4 : 0);
+        if (d < bd) { bd = d; best = id; }
+      });
+      if (best) select(best, false); else clearSel();
+    });
     stage.addEventListener("wheel", function (e) {
       if (!(e.ctrlKey || e.metaKey)) return;
       e.preventDefault();
@@ -171,7 +186,6 @@
     /* range filter */
     function setRange(name) {
       range = (range === name) ? "" : name;
-      if (jump) jump.value = "";
       if (jump) jump.value = "";
       chips.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-range") === range)); });
       var x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9, any = false;
