@@ -41,7 +41,7 @@
 <section class="editorial-hero"><div class="shell editorial-narrow">
 <p class="eyebrow">SENDLINES × ACCESS FUND · 35TH ANNIVERSARY</p>
 <h1>Collaboration print order</h1>
-<p class="editorial-lead">Every print here is <strong>11 × 14 inches on double-thick card stock</strong> — heavy, flat, ready to frame. <strong>$30 each, or 2 for $50.</strong> Limited inventory — tell me what you want and I'll confirm by email. Nothing is charged today. <a href="/collab.html">See the prints →</a></p>
+<p class="editorial-lead">Every print here is <strong>11 × 14 inches on double-thick card stock</strong> — heavy, flat, ready to frame. <strong>$30 each, or 2 for $50. Local delivery is free. Shipping is $10 per order.</strong> Limited inventory — tell me what you want and I'll confirm by email. Nothing is charged today. <a href="/collab.html">See the prints →</a></p>
 </div></section>
 
 <section class="editorial-body"><div class="shell editorial-narrow">
@@ -65,11 +65,11 @@
     <label>Email<input name="v_email" id="v_email" type="email" autocomplete="email" required></label>
     <label>Phone <span class="optional">Optional</span><input name="v_phone" id="v_phone" type="tel" autocomplete="tel"></label>
   </div>
-  <label>Free local delivery, or ship to me
+  <label>Free local delivery, or ship to me for $10
     <select name="v_delivery" id="v_delivery" required>
       <option value="" selected disabled>Choose one</option>
       <option>Free local delivery (in person)</option>
-      <option>Ship to me</option>
+      <option>Ship to me (+$10)</option>
     </select></label>
   <label>Shipping address <span class="optional">Only if shipping</span>
     <textarea name="v_addr" id="v_addr" rows="2"></textarea></label>
@@ -104,7 +104,7 @@
     <textarea name="v_notes" id="v_notes" rows="2" placeholder="Met you at the table, a route that means something, a deadline…"></textarea></label>
 
   <div class="af-note"><strong>Nothing is charged today.</strong>
-    I'll confirm availability by email and set up delivery or shipping — you pay then.</div>
+    I'll confirm availability by email and set up delivery or shipping ($10 if shipped). You pay then.</div>
 
   <button class="button" type="submit" style="margin-top:1.4rem">Send order</button>
   <p class="request-status" id="af-status" aria-live="polite"></p>
@@ -148,8 +148,9 @@
     if(n===0){ s.textContent='Add at least one print before sending.';
       e.preventDefault(); return false; }
     var amt=Math.floor(n/2)*50+(n%2)*30;
-    var out='PRINTS\n'+lines.join('\n')+'\n\nTOTAL  '+n+' print'+(n>1?'s':'')+' = $'+amt+'  ($30 each, 2 for $50)';
-    var d=val('v_delivery'); if(d) out+='\n\nDELIVERY  '+d;
+    var d=val('v_delivery'); var ship=(d && d.indexOf('Ship')===0)?10:0;
+    var out='PRINTS\n'+lines.join('\n')+'\n\nTOTAL  '+n+' print'+(n>1?'s':'')+' = $'+amt+'  ($30 each, 2 for $50)'+(ship?'\nSHIPPING  $'+ship+'\nORDER TOTAL  $'+(amt+ship):'');
+    if(d) out+='\n\nDELIVERY  '+d;
     var a=val('v_addr');     if(a) out+='\nSHIP TO\n'+a;
     var note=val('v_notes'); if(note) out+='\n\nNOTES\n'+note;
     document.getElementById('e_order').value=out;
