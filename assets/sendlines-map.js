@@ -27,9 +27,8 @@
     /* range labels */
     var rg = el("g", {}, svg);
     D.ranges.forEach(function (r) {
-      var g = el("g", { "class": "slmap-range", tabindex: "0", role: "button", "aria-label": "Show the " + r.name, transform: "translate(" + r.x + " " + r.y + ")" }, rg);
+      var g = el("g", { "class": "slmap-range", tabindex: "0", role: "button", transform: "translate(" + r.x + " " + r.y + ")" }, rg);
       var t = el("text", { x: 0, y: 0, "text-anchor": r.anchor || "middle" }, g); t.textContent = r.name;
-      g.addEventListener("click", function (e) { e.stopPropagation(); setRange(r.name); });
       g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setRange(r.name); } });
     });
 
@@ -117,15 +116,30 @@
     /* taps resolve to the nearest visible mark, so crowded ranges stay selectable */
     stage.addEventListener("click", function (e) {
       if (moved) return;
-      if (e.target.closest && (e.target.closest(".slmap-zoom") || e.target.closest(".slmap-range"))) return;
-      var best = null, bd = HIT + 8;
+      if (e.target.closest && e.target.closest(".slmap-zoom")) return;
+      var cand = [];
       Object.keys(byId).forEach(function (id) {
         var r = byId[id]; if (r.g.classList.contains("is-dim") || r.g.getBoundingClientRect().width === 0) return;
         var c = r.g.querySelector(".hit").getBoundingClientRect();
         var d = Math.hypot(e.clientX - (c.left + c.width / 2), e.clientY - (c.top + c.height / 2)) - (r.p.kind === "peak" ? 4 : 0);
-        if (d < bd) { bd = d; best = id; }
+        if (d < HIT + 8) cand.push({ id: id, d: d });
       });
-      if (best) select(best, false); else clearSel();
+      cand.sort(function (a, b) { return a.d - b.d; });
+      if (!cand.length) {
+        /* range names only react when no mark is under the tap */
+        var hit = null;
+        svg.querySelectorAll(".slmap-range").forEach(function (g) {
+          var b = g.getBoundingClientRect();
+          if (e.clientX >= b.left - 6 && e.clientX <= b.right + 6 && e.clientY >= b.top - 6 && e.clientY <= b.bottom + 6) hit = g;
+        });
+        if (hit) { setRange(hit.querySelector("text").textContent); return; }
+        clearSel(); return;
+      }
+      /* several marks under the finger: zoom in on the cluster first so each can be picked on its own */
+      if (cand.length > 1 && cand[1].d - cand[0].d < 10 && s < MAX - 0.5) {
+        var rc = stage.getBoundingClientRect(); animate(); zoomAt(e.clientX - rc.left, e.clientY - rc.top, s * 2.4); return;
+      }
+      select(cand[0].id, false);
     });
     stage.addEventListener("wheel", function (e) {
       if (!(e.ctrlKey || e.metaKey)) return;

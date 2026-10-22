@@ -8,7 +8,7 @@
 .slmap-layers{display:flex;gap:var(--s4);flex-wrap:wrap}
 .slmap-layers label{display:inline-flex;align-items:center;gap:6px;cursor:pointer;color:var(--ink-soft)}
 .slmap-jump{margin-left:auto;display:flex;align-items:center;gap:8px}
-.slmap-jump select{min-height:32px;max-width:200px;border:1px solid var(--rule);border-radius:var(--radius);background:var(--paper);color:var(--ink);padding:4px 8px}
+.slmap-jump select{min-height:32px;max-width:200px;text-overflow:ellipsis;border:1px solid var(--rule);border-radius:var(--radius);background:var(--paper);color:var(--ink);padding:4px 8px}
 .slmap-main{display:grid;grid-template-columns:minmax(0,1fr) 280px}
 .slmap-stage{position:relative;overflow:hidden;background:#EAE0C9;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none;min-height:320px}
 .slmap-stage.is-zoomed{touch-action:none}
@@ -32,7 +32,7 @@
 .slmap-pt.is-dim .slmap-s{opacity:.16}
 .slmap-pt.is-dim{pointer-events:none}
 .slmap[data-hide-peak] .slmap-pt[data-kind="peak"],.slmap[data-hide-crag] .slmap-pt[data-kind="crag"],.slmap[data-hide-photo] .slmap-pt[data-kind="photo"]{display:none}
-.slmap-range{cursor:pointer;outline:none}
+.slmap-range{outline:none;pointer-events:none}
 .slmap-range text{transform:scale(var(--k));font:500 11px var(--mono);letter-spacing:.2em;text-transform:uppercase;fill:rgba(31,27,22,.9);paint-order:stroke;stroke:rgba(251,247,238,.85);stroke-width:4px}
 .slmap-range:hover text,.slmap-range:focus text{fill:var(--accent)}
 .slmap-zoom{position:absolute;right:12px;top:12px;display:grid;gap:6px;z-index:3}
