@@ -228,3 +228,8 @@ main{overflow:clip}
 
 @media(max-width:1280px){.desktop-nav{gap:var(--s4)}}
 @media(max-width:1080px){.desktop-nav{display:none}.menu-toggle{display:block}}
+
+/* Keep field notebook and logbook links adjacent without crowding the header. */
+.desktop-nav{gap:16px;font-size:11px;letter-spacing:.07em}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain;padding-bottom:max(32px,env(safe-area-inset-bottom))}
+@media(max-width:1279px){.desktop-nav{display:none}.menu-toggle{display:block}}
