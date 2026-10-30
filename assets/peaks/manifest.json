@@ -60,14 +60,14 @@
   "peaks": {
     "elbert": {
       "slug": "elbert",
-      "name": "Mt. Elbert",
+      "name": "Mount Elbert",
       "plate": 1,
       "plate_label": "PLATE 001",
       "elevation_ft": 14440,
       "latitude": 39.1178,
       "longitude": -106.4454,
       "range": "Sawatch Range",
-      "route_name": "Mt. Elbert Trailhead \u2014 mapped summit approach",
+      "route_name": "Mount Elbert Trailhead \u2014 mapped summit approach",
       "route_mode": "summit_route",
       "approach_only": false,
       "source": {
@@ -5435,7 +5435,7 @@
       "latitude": 38.9647,
       "longitude": -106.3389,
       "range": "Sawatch Range",
-      "route_name": "Mt. Missouri & Mt. Columbia \u2014 mapped summit approach",
+      "route_name": "Missouri Mountain & Mount Columbia \u2014 mapped summit approach",
       "route_mode": "summit_route",
       "approach_only": false,
       "source": {
@@ -5643,7 +5643,7 @@
     },
     "sneffels": {
       "slug": "sneffels",
-      "name": "Mt. Sneffels",
+      "name": "Mount Sneffels",
       "plate": 27,
       "plate_label": "PLATE 027",
       "elevation_ft": 14158,
@@ -7597,7 +7597,7 @@
       "latitude": 38.9476,
       "longitude": -106.3785,
       "range": "Sawatch Range",
-      "route_name": "Mt. Missouri & Mt. Columbia \u2014 mapped summit approach",
+      "route_name": "Missouri Mountain & Mount Columbia \u2014 mapped summit approach",
       "route_mode": "summit_route",
       "approach_only": false,
       "source": {
@@ -8019,7 +8019,7 @@
     },
     "bierstadt": {
       "slug": "bierstadt",
-      "name": "Mt. Bierstadt",
+      "name": "Mount Bierstadt",
       "plate": 38,
       "plate_label": "PLATE 038",
       "elevation_ft": 14065,

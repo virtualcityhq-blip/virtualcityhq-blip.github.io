@@ -5,7 +5,7 @@
   {
    "id": "elbert",
    "kind": "peak",
-   "name": "Mt. Elbert",
+   "name": "Mount Elbert",
    "x": 948.3,
    "y": 895.5,
    "elev": "14,440",
@@ -395,7 +395,7 @@
   {
    "id": "sneffels",
    "kind": "peak",
-   "name": "Mt. Sneffels",
+   "name": "Mount Sneffels",
    "x": 457.9,
    "y": 1414.2,
    "elev": "14,158",
@@ -560,7 +560,7 @@
   {
    "id": "bierstadt",
    "kind": "peak",
-   "name": "Mt. Bierstadt",
+   "name": "Mount Bierstadt",
    "x": 1231.1,
    "y": 676.7,
    "elev": "14,065",
@@ -899,7 +899,7 @@
    "y": 1053.0,
    "anchor": "end",
    "count": 15,
-   "high": "Mt. Elbert, 14,440 feet",
+   "high": "Mount Elbert, 14,440 feet",
    "href": "/sawatch-range.html"
   },
   {
