@@ -5,7 +5,12 @@
   const candidate = (params.get('src') || params.get('utm_source') || (location.pathname === '/checklist/facebook-button.html' ? 'facebook' : location.pathname === '/checklist/pinterest-profile.html' ? 'pinterest' : '')).trim().toLowerCase();
   const source = allowed.has(candidate) ? candidate : 'website';
   // No arbitrary query strings, referrers, identifiers or summit selections leave this page.
-  document.querySelectorAll('[data-amazon]').forEach(a => { a.href = `/go/logbook/${source}.html`; });
+  document.querySelectorAll('[data-amazon]').forEach(a => {
+    // Current-edition checklist links use new provider tags; legacy book pages retain their tags.
+    a.href = a.hasAttribute('data-current-logbook')
+      ? `/go/logbook-136/${source === 'facebook' ? 'facebook' : 'website'}.html`
+      : `/go/logbook/${source}.html`;
+  });
   document.querySelectorAll('[data-companion], a[href="/logbook.html"], a[href="/14ers-checklist.html"]').forEach(a => {
     const url = new URL(a.getAttribute('href'), location.origin);
     if (source !== 'website') url.searchParams.set('src', source);
