@@ -2,7 +2,7 @@
   'use strict';
   const allowed = new Set(['website', 'pinterest', 'facebook', 'partner']);
   const params = new URLSearchParams(location.search);
-  const candidate = (params.get('src') || params.get('utm_source') || '').trim().toLowerCase();
+  const candidate = (params.get('src') || params.get('utm_source') || (location.pathname === '/checklist/facebook-button.html' ? 'facebook' : location.pathname === '/checklist/pinterest-profile.html' ? 'pinterest' : '')).trim().toLowerCase();
   const source = allowed.has(candidate) ? candidate : 'website';
   // No arbitrary query strings, referrers, identifiers or summit selections leave this page.
   document.querySelectorAll('[data-amazon]').forEach(a => { a.href = `/go/logbook/${source}.html`; });
