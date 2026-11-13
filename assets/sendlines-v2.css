@@ -466,3 +466,19 @@ html:not(.js) .index-bar{display:none}
 
 /* Align the photography browse action with its companion link on mobile. */
 .photo-hero .hero-actions .button{width:auto;justify-content:flex-start}
+/* Etsy reviews module (tools/build_reviews.py) */
+.reviews-block{background:var(--paper-deep)}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--s5)}
+.review-card{margin:0;padding:var(--s5);background:var(--paper);border:1px solid var(--rule);display:flex;flex-direction:column;gap:var(--s3)}
+.review-stars{margin:0;color:var(--ink);letter-spacing:.15em;font-size:15px}
+.review-card blockquote{margin:0}.review-card blockquote p{margin:0;font:400 1.125rem/1.55 var(--sans);color:var(--ink)}
+.review-card figcaption{margin-top:auto;font:500 .8125rem/1.5 var(--sans);color:var(--ink-soft)}
+.review-card figcaption span{display:block;color:var(--ink-faint)}
+.reviews-link{margin:var(--s5) 0 0}
+/* Before-the-climb band on peak pages */
+.climb-kit{border-top:var(--hairline)}
+.climb-kit-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--s4);margin-top:var(--s5)}
+.climb-kit-links a{display:flex;flex-direction:column;gap:var(--s1);padding:var(--s4);border:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.climb-kit-links a:hover{background:var(--paper-deep)}
+.climb-kit-links strong{font:600 1.0625rem/1.4 var(--sans)}.climb-kit-links span{font:400 .875rem/1.5 var(--sans);color:var(--ink-soft)}
+.climb-kit-links a,.climb-kit-links a *{text-decoration:none!important}.climb-kit-links a:hover strong{text-decoration:underline!important}
