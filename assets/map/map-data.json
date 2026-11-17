@@ -831,6 +831,17 @@
    "top": true
   },
   {
+   "id": "poudre-canyon",
+   "kind": "crag",
+   "name": "Poudre Canyon",
+   "x": 1318.0,
+   "y": 149.2,
+   "sub": "Granite and gneiss",
+   "note": "Two route portraits along Highway 14, northwest of Fort Collins.",
+   "href": "/climbing/poudre-canyon.html",
+   "top": true
+  },
+  {
    "id": "sprague-lake",
    "kind": "photo",
    "name": "Sprague Lake",

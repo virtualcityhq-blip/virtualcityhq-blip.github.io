@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "source": "design-data/build_climbing_hub.py route registry",
-  "route_count": 21,
+  "route_count": 23,
   "areas": [
     "clear-creek-canyon",
     "boulder-canyon",
-    "staunton-state-park"
+    "staunton-state-park",
+    "poudre-canyon"
   ],
   "routes": [
     {
@@ -342,6 +343,38 @@
         "2x_avif": "/climbing/assets/prints/cookiethief/@2x.avif",
         "2x_webp": "/climbing/assets/prints/cookiethief/@2x.webp",
         "2x_jpg": "/climbing/assets/prints/cookiethief/@2x.jpg"
+      }
+    },
+    {
+      "slug": "themarket",
+      "name": "THE MARKET",
+      "area": "poudre-canyon",
+      "etsy": "https://sendlines.etsy.com/listing/4598067565",
+      "plate": "C-22",
+      "source_master": "design-data/SENDLINES_CLIMBING_REBUILD/staging/poudre_customer_routes_2026-10-14/final_products_2026-10-18/r4/themarket_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/themarket/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/themarket/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/themarket/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/themarket/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/themarket/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/themarket/@2x.jpg"
+      }
+    },
+    {
+      "slug": "sceniccruise",
+      "name": "SCENIC CRUISE",
+      "area": "poudre-canyon",
+      "etsy": "https://sendlines.etsy.com/listing/4598084498",
+      "plate": "C-23",
+      "source_master": "design-data/SENDLINES_CLIMBING_REBUILD/staging/poudre_customer_routes_2026-10-14/final_products_2026-10-18/r4/sceniccruise_45.png",
+      "files": {
+        "1x_avif": "/climbing/assets/prints/sceniccruise/@1x.avif",
+        "1x_webp": "/climbing/assets/prints/sceniccruise/@1x.webp",
+        "1x_jpg": "/climbing/assets/prints/sceniccruise/@1x.jpg",
+        "2x_avif": "/climbing/assets/prints/sceniccruise/@2x.avif",
+        "2x_webp": "/climbing/assets/prints/sceniccruise/@2x.webp",
+        "2x_jpg": "/climbing/assets/prints/sceniccruise/@2x.jpg"
       }
     }
   ]
