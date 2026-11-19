@@ -1,0 +1,39 @@
+name: Refresh Etsy reviews
+
+on:
+  schedule:
+    - cron: "13 12 * * *"   # daily, ~5:13 am Denver
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: etsy-reviews
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch reviews from Etsy API
+        env:
+          ETSY_API_KEY: ${{ secrets.ETSY_API_KEY }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+        run: python3 tools/fetch_etsy_reviews.py
+      - name: Rebuild review blocks
+        run: python3 tools/build_reviews.py
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then echo "no changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add assets/reviews.json $(git diff --name-only -- '*.html')
+          git commit -m "Update Etsy reviews ($(TZ=America/Denver date +%F))"
+          git push
